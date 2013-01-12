@@ -21,6 +21,8 @@ namespace SkypeCallManager
         private void FormMainLoad(object sender, EventArgs e)
         {
             RegisterEventHandler();
+
+            timerMain.Enabled = true;
         }
 
         private void RegisterEventHandler()
@@ -30,6 +32,18 @@ namespace SkypeCallManager
 
             buttonSkypeAttach.Click += (sender, e) => _skypeManager.AttachSkype();
             buttonAttachCheck.Click += (sender, e) => MessageBox.Show(_skypeManager.IsAttached ? "Skypeと接続しています" : "Skypeと接続できていません");
+            buttonEndCall.Click += (sender, e) => _skypeManager.FinishActiveCall();
+
+            timerMain.Tick +=
+                (sender, e) =>
+                {
+                    var now = DateTime.Now;
+                    var stoptime = SettingManager.CallStopTime;
+                    if (now.Hour == stoptime.Hour && now.Minute == stoptime.Minute)
+                    {
+                        _skypeManager.FinishActiveCall();
+                    }
+                };
         }
     }
 }
