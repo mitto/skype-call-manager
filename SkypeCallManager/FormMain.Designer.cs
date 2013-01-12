@@ -87,7 +87,6 @@
             this.toolStripMenuItemFileExit.Name = "toolStripMenuItemFileExit";
             this.toolStripMenuItemFileExit.Size = new System.Drawing.Size(152, 22);
             this.toolStripMenuItemFileExit.Text = "終了(&X)";
-            this.toolStripMenuItemFileExit.Click += new System.EventHandler(this.toolStripMenuItemFileExit_Click);
             // 
             // toolStripMenuItemHelp
             // 
@@ -127,6 +126,7 @@
             this.MainMenuStrip = this.menuStripMain;
             this.Name = "FormMain";
             this.Text = "FormMain";
+            this.Load += new System.EventHandler(this.FormMainLoad);
             this.toolStripContainerMain.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainerMain.TopToolStripPanel.PerformLayout();
             this.toolStripContainerMain.ResumeLayout(false);

@@ -16,9 +16,14 @@ namespace SkypeCallManager
             InitializeComponent();
         }
 
-        private void toolStripMenuItemFileExit_Click(object sender, EventArgs e)
+        private void FormMainLoad(object sender, EventArgs e)
         {
-            Application.Exit();
+            RegisterEventHandler();
+        }
+
+        private void RegisterEventHandler()
+        {
+            toolStripMenuItemFileExit.Click += (sender, e) => Application.Exit();
         }
     }
 }
