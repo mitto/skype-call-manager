@@ -11,6 +11,8 @@ namespace SkypeCallManager
 {
     public partial class FormMain : Form
     {
+        private readonly SkypeManager _skypeManager = new SkypeManager();
+
         public FormMain()
         {
             InitializeComponent();
@@ -24,6 +26,8 @@ namespace SkypeCallManager
         private void RegisterEventHandler()
         {
             toolStripMenuItemFileExit.Click += (sender, e) => Application.Exit();
+
+            buttonSkypeAttach.Click += (sender, e) => _skypeManager.AttachSkype();
         }
     }
 }
