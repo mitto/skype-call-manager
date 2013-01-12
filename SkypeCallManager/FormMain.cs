@@ -26,6 +26,7 @@ namespace SkypeCallManager
         private void RegisterEventHandler()
         {
             toolStripMenuItemFileExit.Click += (sender, e) => Application.Exit();
+            toolStripMenuItemFileSetting.Click += (sender, e) => new FormSetting().ShowDialog();
 
             buttonSkypeAttach.Click += (sender, e) => _skypeManager.AttachSkype();
             buttonAttachCheck.Click += (sender, e) => MessageBox.Show(_skypeManager.IsAttached ? "Skypeと接続しています" : "Skypeと接続できていません");
