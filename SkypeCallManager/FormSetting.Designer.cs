@@ -35,7 +35,7 @@
             this.dateTimePickerStopTime = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonOK = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel1);
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel2);
-            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 262);
+            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 237);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainerMain.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainerMain.Name = "toolStripContainerMain";
@@ -65,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(284, 223);
+            this.panel1.Size = new System.Drawing.Size(284, 198);
             this.panel1.TabIndex = 0;
             // 
             // tabControlMain
@@ -75,7 +75,7 @@
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(284, 223);
+            this.tabControlMain.Size = new System.Drawing.Size(284, 198);
             this.tabControlMain.TabIndex = 0;
             // 
             // tabPageGeneralSetting
@@ -85,7 +85,7 @@
             this.tabPageGeneralSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneralSetting.Name = "tabPageGeneralSetting";
             this.tabPageGeneralSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGeneralSetting.Size = new System.Drawing.Size(276, 197);
+            this.tabPageGeneralSetting.Size = new System.Drawing.Size(276, 172);
             this.tabPageGeneralSetting.TabIndex = 0;
             this.tabPageGeneralSetting.Text = "全般";
             this.tabPageGeneralSetting.UseVisualStyleBackColor = true;
@@ -111,26 +111,26 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.buttonOK);
+            this.panel2.Controls.Add(this.buttonClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 223);
+            this.panel2.Location = new System.Drawing.Point(0, 198);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(284, 39);
             this.panel2.TabIndex = 1;
             // 
-            // buttonOK
+            // buttonClose
             // 
-            this.buttonOK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonOK.Location = new System.Drawing.Point(0, 0);
-            this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(284, 39);
-            this.buttonOK.TabIndex = 0;
-            this.buttonOK.Text = "閉じる";
-            this.buttonOK.UseVisualStyleBackColor = true;
+            this.buttonClose.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonClose.Location = new System.Drawing.Point(0, 0);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(284, 39);
+            this.buttonClose.TabIndex = 0;
+            this.buttonClose.Text = "閉じる";
+            this.buttonClose.UseVisualStyleBackColor = true;
             // 
             // FormSetting
             // 
-            this.AcceptButton = this.buttonOK;
+            this.AcceptButton = this.buttonClose;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
@@ -140,6 +140,7 @@
             this.MinimizeBox = false;
             this.Name = "FormSetting";
             this.Text = "FormSetting";
+            this.Load += new System.EventHandler(this.FormSettingLoad);
             this.toolStripContainerMain.ContentPanel.ResumeLayout(false);
             this.toolStripContainerMain.ResumeLayout(false);
             this.toolStripContainerMain.PerformLayout();
@@ -159,7 +160,7 @@
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabPageGeneralSetting;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button buttonOK;
+        private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.DateTimePicker dateTimePickerStopTime;
         private System.Windows.Forms.Label label1;
 

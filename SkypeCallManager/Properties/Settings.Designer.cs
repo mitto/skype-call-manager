@@ -25,10 +25,10 @@ namespace SkypeCallManager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("20:00:00")]
-        public global::System.TimeSpan CallStopTime {
+        [global::System.Configuration.DefaultSettingValueAttribute("01/12/2013 20:00:00")]
+        public global::System.DateTime CallStopTime {
             get {
-                return ((global::System.TimeSpan)(this["CallStopTime"]));
+                return ((global::System.DateTime)(this["CallStopTime"]));
             }
             set {
                 this["CallStopTime"] = value;

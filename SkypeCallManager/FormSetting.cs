@@ -15,5 +15,23 @@ namespace SkypeCallManager
         {
             InitializeComponent();
         }
+
+        private void FormSettingLoad(object sender, EventArgs e)
+        {
+            LoadSettings();
+            RegisterEventHandler();
+        }
+
+        private void LoadSettings()
+        {
+            dateTimePickerStopTime.Value = SettingManager.CallStopTime;
+        }
+
+        private void RegisterEventHandler()
+        {
+            buttonClose.Click += (sender, e) => this.Close();
+
+            dateTimePickerStopTime.ValueChanged += (sender, e) => SettingManager.CallStopTime = dateTimePickerStopTime.Value;
+        }
     }
 }
