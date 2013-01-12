@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             this.toolStripContainerMain = new System.Windows.Forms.ToolStripContainer();
+            this.buttonSkypeAttach = new System.Windows.Forms.Button();
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItemFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemFileSetting = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemFileExit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemHelpVersion = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemFileSetting = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.timerMain = new System.Windows.Forms.Timer(this.components);
-            this.buttonSkypeAttach = new System.Windows.Forms.Button();
+            this.buttonAttachCheck = new System.Windows.Forms.Button();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.TopToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
@@ -50,6 +51,7 @@
             // 
             // toolStripContainerMain.ContentPanel
             // 
+            this.toolStripContainerMain.ContentPanel.Controls.Add(this.buttonAttachCheck);
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.buttonSkypeAttach);
             this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 236);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -62,6 +64,15 @@
             // toolStripContainerMain.TopToolStripPanel
             // 
             this.toolStripContainerMain.TopToolStripPanel.Controls.Add(this.menuStripMain);
+            // 
+            // buttonSkypeAttach
+            // 
+            this.buttonSkypeAttach.Location = new System.Drawing.Point(12, 18);
+            this.buttonSkypeAttach.Name = "buttonSkypeAttach";
+            this.buttonSkypeAttach.Size = new System.Drawing.Size(75, 23);
+            this.buttonSkypeAttach.TabIndex = 0;
+            this.buttonSkypeAttach.Text = "接続";
+            this.buttonSkypeAttach.UseVisualStyleBackColor = true;
             // 
             // menuStripMain
             // 
@@ -85,6 +96,17 @@
             this.toolStripMenuItemFile.Size = new System.Drawing.Size(85, 22);
             this.toolStripMenuItemFile.Text = "ファイル(&F)";
             // 
+            // toolStripMenuItemFileSetting
+            // 
+            this.toolStripMenuItemFileSetting.Name = "toolStripMenuItemFileSetting";
+            this.toolStripMenuItemFileSetting.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemFileSetting.Text = "設定(&S)";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
             // toolStripMenuItemFileExit
             // 
             this.toolStripMenuItemFileExit.Name = "toolStripMenuItemFileExit";
@@ -105,29 +127,18 @@
             this.toolStripMenuItemHelpVersion.Size = new System.Drawing.Size(190, 22);
             this.toolStripMenuItemHelpVersion.Text = "バージョン情報(&A)...";
             // 
-            // toolStripMenuItemFileSetting
-            // 
-            this.toolStripMenuItemFileSetting.Name = "toolStripMenuItemFileSetting";
-            this.toolStripMenuItemFileSetting.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItemFileSetting.Text = "設定(&S)";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
             // timerMain
             // 
             this.timerMain.Interval = 60000;
             // 
-            // buttonSkypeAttach
+            // buttonAttachCheck
             // 
-            this.buttonSkypeAttach.Location = new System.Drawing.Point(12, 18);
-            this.buttonSkypeAttach.Name = "buttonSkypeAttach";
-            this.buttonSkypeAttach.Size = new System.Drawing.Size(75, 23);
-            this.buttonSkypeAttach.TabIndex = 0;
-            this.buttonSkypeAttach.Text = "接続";
-            this.buttonSkypeAttach.UseVisualStyleBackColor = true;
+            this.buttonAttachCheck.Location = new System.Drawing.Point(12, 47);
+            this.buttonAttachCheck.Name = "buttonAttachCheck";
+            this.buttonAttachCheck.Size = new System.Drawing.Size(75, 23);
+            this.buttonAttachCheck.TabIndex = 1;
+            this.buttonAttachCheck.Text = "接続確認";
+            this.buttonAttachCheck.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -162,6 +173,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.Timer timerMain;
         private System.Windows.Forms.Button buttonSkypeAttach;
+        private System.Windows.Forms.Button buttonAttachCheck;
     }
 }
 
