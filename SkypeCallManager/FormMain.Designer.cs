@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.toolStripContainerMain = new System.Windows.Forms.ToolStripContainer();
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItemFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,6 +37,7 @@
             this.toolStripMenuItemHelpVersion = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemFileSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.timerMain = new System.Windows.Forms.Timer(this.components);
             this.toolStripContainerMain.TopToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.menuStripMain.SuspendLayout();
@@ -112,6 +114,10 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
+            // timerMain
+            // 
+            this.timerMain.Interval = 60000;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -141,6 +147,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemHelpVersion;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemFileSetting;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.Timer timerMain;
     }
 }
 
