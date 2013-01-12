@@ -36,28 +36,46 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.tabPageChatSetting = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxOneMinuteMessage = new System.Windows.Forms.TextBox();
+            this.groupBoxChatMessages = new System.Windows.Forms.GroupBox();
+            this.textBoxThreeMinuteMessage = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxFiveMinuteMessage = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxTenMinuteMessage = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxFifteenMinuteMessage = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageGeneralSetting.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tabPageChatSetting.SuspendLayout();
+            this.groupBoxChatMessages.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainerMain
             // 
+            this.toolStripContainerMain.BottomToolStripPanelVisible = false;
             // 
             // toolStripContainerMain.ContentPanel
             // 
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel1);
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel2);
-            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 237);
+            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 262);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStripContainerMain.LeftToolStripPanelVisible = false;
             this.toolStripContainerMain.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainerMain.Name = "toolStripContainerMain";
+            this.toolStripContainerMain.RightToolStripPanelVisible = false;
             this.toolStripContainerMain.Size = new System.Drawing.Size(284, 262);
             this.toolStripContainerMain.TabIndex = 0;
             this.toolStripContainerMain.Text = "toolStripContainer1";
+            this.toolStripContainerMain.TopToolStripPanelVisible = false;
             // 
             // panel1
             // 
@@ -65,17 +83,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(284, 198);
+            this.panel1.Size = new System.Drawing.Size(284, 223);
             this.panel1.TabIndex = 0;
             // 
             // tabControlMain
             // 
             this.tabControlMain.Controls.Add(this.tabPageGeneralSetting);
+            this.tabControlMain.Controls.Add(this.tabPageChatSetting);
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(284, 198);
+            this.tabControlMain.Size = new System.Drawing.Size(284, 223);
             this.tabControlMain.TabIndex = 0;
             // 
             // tabPageGeneralSetting
@@ -85,7 +104,7 @@
             this.tabPageGeneralSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneralSetting.Name = "tabPageGeneralSetting";
             this.tabPageGeneralSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGeneralSetting.Size = new System.Drawing.Size(276, 172);
+            this.tabPageGeneralSetting.Size = new System.Drawing.Size(276, 197);
             this.tabPageGeneralSetting.TabIndex = 0;
             this.tabPageGeneralSetting.Text = "全般";
             this.tabPageGeneralSetting.UseVisualStyleBackColor = true;
@@ -113,7 +132,7 @@
             // 
             this.panel2.Controls.Add(this.buttonClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 198);
+            this.panel2.Location = new System.Drawing.Point(0, 223);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(284, 39);
             this.panel2.TabIndex = 1;
@@ -127,6 +146,116 @@
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "閉じる";
             this.buttonClose.UseVisualStyleBackColor = true;
+            // 
+            // tabPageChatSetting
+            // 
+            this.tabPageChatSetting.Controls.Add(this.groupBoxChatMessages);
+            this.tabPageChatSetting.Location = new System.Drawing.Point(4, 22);
+            this.tabPageChatSetting.Name = "tabPageChatSetting";
+            this.tabPageChatSetting.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageChatSetting.Size = new System.Drawing.Size(276, 197);
+            this.tabPageChatSetting.TabIndex = 1;
+            this.tabPageChatSetting.Text = "チャット";
+            this.tabPageChatSetting.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "1分前";
+            // 
+            // textBoxOneMinuteMessage
+            // 
+            this.textBoxOneMinuteMessage.Location = new System.Drawing.Point(70, 18);
+            this.textBoxOneMinuteMessage.Name = "textBoxOneMinuteMessage";
+            this.textBoxOneMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxOneMinuteMessage.TabIndex = 1;
+            // 
+            // groupBoxChatMessages
+            // 
+            this.groupBoxChatMessages.Controls.Add(this.label2);
+            this.groupBoxChatMessages.Controls.Add(this.label3);
+            this.groupBoxChatMessages.Controls.Add(this.label4);
+            this.groupBoxChatMessages.Controls.Add(this.label5);
+            this.groupBoxChatMessages.Controls.Add(this.label6);
+            this.groupBoxChatMessages.Controls.Add(this.textBoxOneMinuteMessage);
+            this.groupBoxChatMessages.Controls.Add(this.textBoxThreeMinuteMessage);
+            this.groupBoxChatMessages.Controls.Add(this.textBoxFiveMinuteMessage);
+            this.groupBoxChatMessages.Controls.Add(this.textBoxTenMinuteMessage);
+            this.groupBoxChatMessages.Controls.Add(this.textBoxFifteenMinuteMessage);
+            this.groupBoxChatMessages.Location = new System.Drawing.Point(8, 6);
+            this.groupBoxChatMessages.Name = "groupBoxChatMessages";
+            this.groupBoxChatMessages.Size = new System.Drawing.Size(260, 185);
+            this.groupBoxChatMessages.TabIndex = 2;
+            this.groupBoxChatMessages.TabStop = false;
+            this.groupBoxChatMessages.Text = "切断前に送信するメッセージ";
+            // 
+            // textBoxThreeMinuteMessage
+            // 
+            this.textBoxThreeMinuteMessage.Location = new System.Drawing.Point(70, 43);
+            this.textBoxThreeMinuteMessage.Name = "textBoxThreeMinuteMessage";
+            this.textBoxThreeMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxThreeMinuteMessage.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 12);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "3分前";
+            // 
+            // textBoxFiveMinuteMessage
+            // 
+            this.textBoxFiveMinuteMessage.Location = new System.Drawing.Point(70, 68);
+            this.textBoxFiveMinuteMessage.Name = "textBoxFiveMinuteMessage";
+            this.textBoxFiveMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxFiveMinuteMessage.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 12);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "5分前";
+            // 
+            // textBoxTenMinuteMessage
+            // 
+            this.textBoxTenMinuteMessage.Location = new System.Drawing.Point(70, 93);
+            this.textBoxTenMinuteMessage.Name = "textBoxTenMinuteMessage";
+            this.textBoxTenMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxTenMinuteMessage.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "10分前";
+            // 
+            // textBoxFifteenMinuteMessage
+            // 
+            this.textBoxFifteenMinuteMessage.Location = new System.Drawing.Point(70, 118);
+            this.textBoxFifteenMinuteMessage.Name = "textBoxFifteenMinuteMessage";
+            this.textBoxFifteenMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxFifteenMinuteMessage.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 121);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 12);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "15分前";
             // 
             // FormSetting
             // 
@@ -149,6 +278,9 @@
             this.tabPageGeneralSetting.ResumeLayout(false);
             this.tabPageGeneralSetting.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.tabPageChatSetting.ResumeLayout(false);
+            this.groupBoxChatMessages.ResumeLayout(false);
+            this.groupBoxChatMessages.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -163,6 +295,18 @@
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.DateTimePicker dateTimePickerStopTime;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPageChatSetting;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBoxChatMessages;
+        private System.Windows.Forms.TextBox textBoxFifteenMinuteMessage;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxTenMinuteMessage;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxFiveMinuteMessage;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxThreeMinuteMessage;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxOneMinuteMessage;
 
     }
 }

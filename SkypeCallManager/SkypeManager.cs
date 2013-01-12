@@ -22,5 +22,21 @@ namespace SkypeCallManager
                 call.Finish(); 
             }
         }
+
+        public bool ExistsActiveCalls
+        {
+            get
+            {
+                return Skype.ActiveCalls.Count > 0;
+            }
+        }
+
+        public void SendMessageToCallPartner(string message)
+        {
+            foreach (Call call in Skype.ActiveCalls)
+            {
+                Skype.SendMessage(call.PartnerHandle, message);
+            }
+        }
     }
 }
