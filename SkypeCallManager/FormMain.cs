@@ -53,7 +53,6 @@ namespace SkypeCallManager
             toolStripMenuItemTrayRightExit.Click += (sender, e) => Application.Exit();
 
             buttonSkypeAttach.Click += (sender, e) => _skypeManager.AttachSkype();
-            buttonAttachCheck.Click += (sender, e) => MessageBox.Show(_skypeManager.IsAttached ? "Skypeと接続しています" : "Skypeと接続できていません");
             buttonEndCall.Click += (sender, e) => _skypeManager.FinishActiveCall();
 
             timerMain.Tick +=
@@ -93,6 +92,13 @@ namespace SkypeCallManager
                         _skypeManager.FinishActiveCall();
                     }
                 };
+
+            _skypeManager.ChangeAttachmentStatus +=
+                (sender, e) =>
+                {
+                    toolStripStatusLabelSkypeAttachStatus.Text = SkypeManager.GetAttachmentStatusMessage(_skypeManager.AttachmentStatus);
+                };
+            _skypeManager.IsEnabledCheckAttachmentStatusTimer = true;
         }
 
         private void SetVisible(Boolean isVisible)
