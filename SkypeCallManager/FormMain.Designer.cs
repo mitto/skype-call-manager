@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.toolStripContainerMain = new System.Windows.Forms.ToolStripContainer();
             this.buttonEndCall = new System.Windows.Forms.Button();
             this.buttonAttachCheck = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.toolStripMenuItemHelpVersion = new System.Windows.Forms.ToolStripMenuItem();
             this.timerMain = new System.Windows.Forms.Timer(this.components);
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
+            this.notifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
             this.toolStripContainerMain.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.TopToolStripPanel.SuspendLayout();
@@ -165,6 +167,12 @@
             this.statusStripMain.Size = new System.Drawing.Size(284, 22);
             this.statusStripMain.TabIndex = 0;
             // 
+            // notifyIconMain
+            // 
+            this.notifyIconMain.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMain.Icon")));
+            this.notifyIconMain.Text = "SkypeCallManager";
+            this.notifyIconMain.Visible = true;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -203,6 +211,7 @@
         private System.Windows.Forms.Button buttonAttachCheck;
         private System.Windows.Forms.Button buttonEndCall;
         private System.Windows.Forms.StatusStrip statusStripMain;
+        private System.Windows.Forms.NotifyIcon notifyIconMain;
     }
 }
 
