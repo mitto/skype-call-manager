@@ -51,9 +51,8 @@ namespace SkypeCallManager
             toolStripMenuItemFileExit.Click += (sender, e) => Application.Exit();
             toolStripMenuItemFileSetting.Click += (sender, e) => new FormSetting().ShowDialog();
             toolStripMenuItemTrayRightExit.Click += (sender, e) => Application.Exit();
-
-            buttonSkypeAttach.Click += (sender, e) => _skypeManager.AttachSkype();
-            buttonEndCall.Click += (sender, e) => _skypeManager.FinishActiveCall();
+            toolStripMenuItemToolSkypeAttach.Click += (sender, e) => _skypeManager.AttachSkype();
+            toolStripMenuItemToolCloseActiveCalls.Click += (sender, e) => _skypeManager.FinishActiveCall();
 
             timerMain.Tick +=
                 (sender, e) =>
