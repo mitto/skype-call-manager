@@ -27,6 +27,27 @@ namespace SkypeCallManager
 
         private void RegisterEventHandler()
         {
+            Shown += (sender, e) => SetVisible(false);
+            FormClosing +=
+                (sender, e) =>
+                {
+                    if (e.CloseReason == CloseReason.UserClosing)
+                    {
+                        e.Cancel = true;
+                        SetVisible(false);
+                    }
+                };
+
+            notifyIconMain.MouseClick +=
+                (sender, e) =>
+                {
+                    if (e.Button == MouseButtons.Left)
+                    {
+                        SetVisible(!Visible);
+                    }
+                };
+
+
             toolStripMenuItemFileExit.Click += (sender, e) => Application.Exit();
             toolStripMenuItemFileSetting.Click += (sender, e) => new FormSetting().ShowDialog();
 
@@ -72,5 +93,21 @@ namespace SkypeCallManager
                     }
                 };
         }
+
+        private void SetVisible(Boolean isVisible)
+        {
+            if (isVisible)
+            {
+                ShowInTaskbar = true;
+                Visible = true;
+                Focus();
+            }
+            else
+            {
+                Visible = false;
+                ShowInTaskbar = false;
+            }
+        }
+
     }
 }
