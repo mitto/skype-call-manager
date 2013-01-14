@@ -27,7 +27,11 @@ namespace SkypeCallManager
 
         private void RegisterEventHandler()
         {
-            Shown += (sender, e) => SetVisible(false);
+            Shown += (sender, e) =>
+                {
+                    SetVisible(false);
+                    _skypeManager.AttachSkype();
+                };
             FormClosing +=
                 (sender, e) =>
                 {
