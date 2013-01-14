@@ -48,12 +48,19 @@
             this.toolStripMenuItemToolSkypeAttach = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemToolCloseActiveCalls = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBoxTimerStatus = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelSettingTime = new System.Windows.Forms.Label();
+            this.labelToSettingTime = new System.Windows.Forms.Label();
             this.toolStripContainerMain.BottomToolStripPanel.SuspendLayout();
+            this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.TopToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.menuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
             this.contextMenuStripTrayRight.SuspendLayout();
+            this.groupBoxTimerStatus.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainerMain
@@ -65,6 +72,7 @@
             // 
             // toolStripContainerMain.ContentPanel
             // 
+            this.toolStripContainerMain.ContentPanel.Controls.Add(this.groupBoxTimerStatus);
             this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 213);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainerMain.Location = new System.Drawing.Point(0, 0);
@@ -198,6 +206,57 @@
             this.toolStripMenuItemToolCloseActiveCalls.Size = new System.Drawing.Size(244, 22);
             this.toolStripMenuItemToolCloseActiveCalls.Text = "アクティブな通話をすべて終了";
             // 
+            // groupBoxTimerStatus
+            // 
+            this.groupBoxTimerStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxTimerStatus.Controls.Add(this.labelSettingTime);
+            this.groupBoxTimerStatus.Controls.Add(this.labelToSettingTime);
+            this.groupBoxTimerStatus.Controls.Add(this.label2);
+            this.groupBoxTimerStatus.Controls.Add(this.label1);
+            this.groupBoxTimerStatus.Location = new System.Drawing.Point(12, 15);
+            this.groupBoxTimerStatus.Name = "groupBoxTimerStatus";
+            this.groupBoxTimerStatus.Size = new System.Drawing.Size(260, 183);
+            this.groupBoxTimerStatus.TabIndex = 0;
+            this.groupBoxTimerStatus.TabStop = false;
+            this.groupBoxTimerStatus.Text = "切断タイマーステータス";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "次の設定時間：";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 12);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "次の設定時間まであと：";
+            // 
+            // labelSettingTime
+            // 
+            this.labelSettingTime.AutoSize = true;
+            this.labelSettingTime.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelSettingTime.Location = new System.Drawing.Point(18, 48);
+            this.labelSettingTime.Name = "labelSettingTime";
+            this.labelSettingTime.Size = new System.Drawing.Size(0, 36);
+            this.labelSettingTime.TabIndex = 2;
+            // 
+            // labelToSettingTime
+            // 
+            this.labelToSettingTime.AutoSize = true;
+            this.labelToSettingTime.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelToSettingTime.Location = new System.Drawing.Point(18, 125);
+            this.labelToSettingTime.Name = "labelToSettingTime";
+            this.labelToSettingTime.Size = new System.Drawing.Size(0, 36);
+            this.labelToSettingTime.TabIndex = 3;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -210,6 +269,7 @@
             this.Load += new System.EventHandler(this.FormMainLoad);
             this.toolStripContainerMain.BottomToolStripPanel.ResumeLayout(false);
             this.toolStripContainerMain.BottomToolStripPanel.PerformLayout();
+            this.toolStripContainerMain.ContentPanel.ResumeLayout(false);
             this.toolStripContainerMain.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainerMain.TopToolStripPanel.PerformLayout();
             this.toolStripContainerMain.ResumeLayout(false);
@@ -219,6 +279,8 @@
             this.statusStripMain.ResumeLayout(false);
             this.statusStripMain.PerformLayout();
             this.contextMenuStripTrayRight.ResumeLayout(false);
+            this.groupBoxTimerStatus.ResumeLayout(false);
+            this.groupBoxTimerStatus.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -243,6 +305,11 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemToolSkypeAttach;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemToolCloseActiveCalls;
+        private System.Windows.Forms.GroupBox groupBoxTimerStatus;
+        private System.Windows.Forms.Label labelToSettingTime;
+        private System.Windows.Forms.Label labelSettingTime;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

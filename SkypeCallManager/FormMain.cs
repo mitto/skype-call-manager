@@ -53,11 +53,17 @@ namespace SkypeCallManager
 
 
             toolStripMenuItemFileExit.Click += (sender, e) => Application.Exit();
-            toolStripMenuItemFileSetting.Click += (sender, e) => new FormSetting().ShowDialog();
+            toolStripMenuItemFileSetting.Click +=
+                (sender, e) =>
+                {
+                    new FormSetting().ShowDialog();
+                    UpdateLabelStatus();
+                };
             toolStripMenuItemTrayRightExit.Click += (sender, e) => Application.Exit();
             toolStripMenuItemToolSkypeAttach.Click += (sender, e) => _skypeManager.AttachSkype();
             toolStripMenuItemToolCloseActiveCalls.Click += (sender, e) => _skypeManager.FinishActiveCall();
 
+            UpdateLabelStatus();
             timerMain.Tick +=
                 (sender, e) =>
                 {
@@ -65,6 +71,8 @@ namespace SkypeCallManager
                     var stoptime = SettingManager.CallStopTime;
                     stoptime = new DateTime(now.Year, now.Month, now.Day, stoptime.Hour, stoptime.Minute, stoptime.Second);
                     var diff = stoptime - now;
+
+                    UpdateLabelStatus();
 
                     switch (diff.Minutes)
                     {
@@ -119,5 +127,21 @@ namespace SkypeCallManager
             }
         }
 
+        private void UpdateLabelStatus()
+        {
+            var now = DateTime.Now;
+            var calltime = SettingManager.CallStopTime;
+            calltime = new DateTime(now.Year, now.Month, now.Day, calltime.Hour, calltime.Minute, calltime.Second);
+            var diff = calltime - now;
+
+            if (diff < new TimeSpan(0, 0, 0))
+            {
+                calltime = calltime.AddDays(1);
+                diff = calltime - now;
+            }
+
+            labelSettingTime.Text = String.Format("{0}", calltime.ToString("yyyy/MM/dd HH:mm"));
+            labelToSettingTime.Text = String.Format("{0}時間{1}分くらい", diff.Hours, diff.Minutes);
+        }
     }
 }
