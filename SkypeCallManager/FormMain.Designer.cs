@@ -44,11 +44,14 @@
             this.timerMain = new System.Windows.Forms.Timer(this.components);
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
             this.notifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStripTrayRight = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemTrayRightExit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainerMain.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.TopToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.menuStripMain.SuspendLayout();
+            this.contextMenuStripTrayRight.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainerMain
@@ -173,6 +176,19 @@
             this.notifyIconMain.Text = "SkypeCallManager";
             this.notifyIconMain.Visible = true;
             // 
+            // contextMenuStripTrayRight
+            // 
+            this.contextMenuStripTrayRight.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemTrayRightExit});
+            this.contextMenuStripTrayRight.Name = "contextMenuStripTrayRight";
+            this.contextMenuStripTrayRight.Size = new System.Drawing.Size(153, 48);
+            // 
+            // toolStripMenuItemTrayRightExit
+            // 
+            this.toolStripMenuItemTrayRightExit.Name = "toolStripMenuItemTrayRightExit";
+            this.toolStripMenuItemTrayRightExit.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemTrayRightExit.Text = "終了";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -192,6 +208,7 @@
             this.toolStripContainerMain.PerformLayout();
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
+            this.contextMenuStripTrayRight.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -212,6 +229,8 @@
         private System.Windows.Forms.Button buttonEndCall;
         private System.Windows.Forms.StatusStrip statusStripMain;
         private System.Windows.Forms.NotifyIcon notifyIconMain;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStripTrayRight;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemTrayRightExit;
     }
 }
 
