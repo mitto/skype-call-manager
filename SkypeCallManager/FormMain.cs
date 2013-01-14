@@ -62,6 +62,8 @@ namespace SkypeCallManager
             toolStripMenuItemTrayRightExit.Click += (sender, e) => Application.Exit();
             toolStripMenuItemToolSkypeAttach.Click += (sender, e) => _skypeManager.AttachSkype();
             toolStripMenuItemToolCloseActiveCalls.Click += (sender, e) => _skypeManager.FinishActiveCall();
+            toolStripMenuItemHelpCheckUpdate.Click += (sender, e) => Growl_for_Skype_Notification.Utilities.CheckNewDeployment();
+            toolStripMenuItemHelpVersion.Click += (sender, e) => Growl_for_Skype_Notification.Utilities.AboutSoftware();
 
             UpdateLabelStatus();
             timerMain.Tick +=

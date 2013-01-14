@@ -31,36 +31,38 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.toolStripContainerMain = new System.Windows.Forms.ToolStripContainer();
+            this.statusStripMain = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabelSkypeAttachStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.groupBoxTimerStatus = new System.Windows.Forms.GroupBox();
+            this.labelSettingTime = new System.Windows.Forms.Label();
+            this.labelToSettingTime = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItemFile = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemFileSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemFileExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemHelpVersion = new System.Windows.Forms.ToolStripMenuItem();
-            this.timerMain = new System.Windows.Forms.Timer(this.components);
-            this.statusStripMain = new System.Windows.Forms.StatusStrip();
-            this.notifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contextMenuStripTrayRight = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItemTrayRightExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripStatusLabelSkypeAttachStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripMenuItemTool = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemToolSkypeAttach = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemToolCloseActiveCalls = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBoxTimerStatus = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.labelSettingTime = new System.Windows.Forms.Label();
-            this.labelToSettingTime = new System.Windows.Forms.Label();
+            this.toolStripMenuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemHelpVersion = new System.Windows.Forms.ToolStripMenuItem();
+            this.timerMain = new System.Windows.Forms.Timer(this.components);
+            this.notifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStripTrayRight = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemTrayRightExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemHelpCheckUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripContainerMain.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.TopToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
-            this.menuStripMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
-            this.contextMenuStripTrayRight.SuspendLayout();
             this.groupBoxTimerStatus.SuspendLayout();
+            this.menuStripMain.SuspendLayout();
+            this.contextMenuStripTrayRight.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainerMain
@@ -84,6 +86,73 @@
             // toolStripContainerMain.TopToolStripPanel
             // 
             this.toolStripContainerMain.TopToolStripPanel.Controls.Add(this.menuStripMain);
+            // 
+            // statusStripMain
+            // 
+            this.statusStripMain.Dock = System.Windows.Forms.DockStyle.None;
+            this.statusStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabelSkypeAttachStatus});
+            this.statusStripMain.Location = new System.Drawing.Point(0, 0);
+            this.statusStripMain.Name = "statusStripMain";
+            this.statusStripMain.Size = new System.Drawing.Size(284, 23);
+            this.statusStripMain.TabIndex = 0;
+            // 
+            // toolStripStatusLabelSkypeAttachStatus
+            // 
+            this.toolStripStatusLabelSkypeAttachStatus.Name = "toolStripStatusLabelSkypeAttachStatus";
+            this.toolStripStatusLabelSkypeAttachStatus.Size = new System.Drawing.Size(164, 18);
+            this.toolStripStatusLabelSkypeAttachStatus.Text = "Skypeと接続されていません";
+            // 
+            // groupBoxTimerStatus
+            // 
+            this.groupBoxTimerStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxTimerStatus.Controls.Add(this.labelSettingTime);
+            this.groupBoxTimerStatus.Controls.Add(this.labelToSettingTime);
+            this.groupBoxTimerStatus.Controls.Add(this.label2);
+            this.groupBoxTimerStatus.Controls.Add(this.label1);
+            this.groupBoxTimerStatus.Location = new System.Drawing.Point(12, 15);
+            this.groupBoxTimerStatus.Name = "groupBoxTimerStatus";
+            this.groupBoxTimerStatus.Size = new System.Drawing.Size(260, 183);
+            this.groupBoxTimerStatus.TabIndex = 0;
+            this.groupBoxTimerStatus.TabStop = false;
+            this.groupBoxTimerStatus.Text = "切断タイマーステータス";
+            // 
+            // labelSettingTime
+            // 
+            this.labelSettingTime.AutoSize = true;
+            this.labelSettingTime.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelSettingTime.Location = new System.Drawing.Point(18, 48);
+            this.labelSettingTime.Name = "labelSettingTime";
+            this.labelSettingTime.Size = new System.Drawing.Size(0, 36);
+            this.labelSettingTime.TabIndex = 2;
+            // 
+            // labelToSettingTime
+            // 
+            this.labelToSettingTime.AutoSize = true;
+            this.labelToSettingTime.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.labelToSettingTime.Location = new System.Drawing.Point(18, 125);
+            this.labelToSettingTime.Name = "labelToSettingTime";
+            this.labelToSettingTime.Size = new System.Drawing.Size(0, 36);
+            this.labelToSettingTime.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 12);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "次の設定時間まであと：";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "次の設定時間：";
             // 
             // menuStripMain
             // 
@@ -125,60 +194,6 @@
             this.toolStripMenuItemFileExit.Size = new System.Drawing.Size(118, 22);
             this.toolStripMenuItemFileExit.Text = "終了(&X)";
             // 
-            // toolStripMenuItemHelp
-            // 
-            this.toolStripMenuItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemHelpVersion});
-            this.toolStripMenuItemHelp.Name = "toolStripMenuItemHelp";
-            this.toolStripMenuItemHelp.Size = new System.Drawing.Size(75, 22);
-            this.toolStripMenuItemHelp.Text = "ヘルプ(&H)";
-            // 
-            // toolStripMenuItemHelpVersion
-            // 
-            this.toolStripMenuItemHelpVersion.Name = "toolStripMenuItemHelpVersion";
-            this.toolStripMenuItemHelpVersion.Size = new System.Drawing.Size(190, 22);
-            this.toolStripMenuItemHelpVersion.Text = "バージョン情報(&A)...";
-            // 
-            // timerMain
-            // 
-            this.timerMain.Interval = 60000;
-            // 
-            // statusStripMain
-            // 
-            this.statusStripMain.Dock = System.Windows.Forms.DockStyle.None;
-            this.statusStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabelSkypeAttachStatus});
-            this.statusStripMain.Location = new System.Drawing.Point(0, 0);
-            this.statusStripMain.Name = "statusStripMain";
-            this.statusStripMain.Size = new System.Drawing.Size(284, 23);
-            this.statusStripMain.TabIndex = 0;
-            // 
-            // notifyIconMain
-            // 
-            this.notifyIconMain.ContextMenuStrip = this.contextMenuStripTrayRight;
-            this.notifyIconMain.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMain.Icon")));
-            this.notifyIconMain.Text = "SkypeCallManager";
-            this.notifyIconMain.Visible = true;
-            // 
-            // contextMenuStripTrayRight
-            // 
-            this.contextMenuStripTrayRight.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemTrayRightExit});
-            this.contextMenuStripTrayRight.Name = "contextMenuStripTrayRight";
-            this.contextMenuStripTrayRight.Size = new System.Drawing.Size(101, 26);
-            // 
-            // toolStripMenuItemTrayRightExit
-            // 
-            this.toolStripMenuItemTrayRightExit.Name = "toolStripMenuItemTrayRightExit";
-            this.toolStripMenuItemTrayRightExit.Size = new System.Drawing.Size(100, 22);
-            this.toolStripMenuItemTrayRightExit.Text = "終了";
-            // 
-            // toolStripStatusLabelSkypeAttachStatus
-            // 
-            this.toolStripStatusLabelSkypeAttachStatus.Name = "toolStripStatusLabelSkypeAttachStatus";
-            this.toolStripStatusLabelSkypeAttachStatus.Size = new System.Drawing.Size(164, 18);
-            this.toolStripStatusLabelSkypeAttachStatus.Text = "Skypeと接続されていません";
-            // 
             // toolStripMenuItemTool
             // 
             this.toolStripMenuItemTool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -206,56 +221,56 @@
             this.toolStripMenuItemToolCloseActiveCalls.Size = new System.Drawing.Size(244, 22);
             this.toolStripMenuItemToolCloseActiveCalls.Text = "アクティブな通話をすべて終了";
             // 
-            // groupBoxTimerStatus
+            // toolStripMenuItemHelp
             // 
-            this.groupBoxTimerStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxTimerStatus.Controls.Add(this.labelSettingTime);
-            this.groupBoxTimerStatus.Controls.Add(this.labelToSettingTime);
-            this.groupBoxTimerStatus.Controls.Add(this.label2);
-            this.groupBoxTimerStatus.Controls.Add(this.label1);
-            this.groupBoxTimerStatus.Location = new System.Drawing.Point(12, 15);
-            this.groupBoxTimerStatus.Name = "groupBoxTimerStatus";
-            this.groupBoxTimerStatus.Size = new System.Drawing.Size(260, 183);
-            this.groupBoxTimerStatus.TabIndex = 0;
-            this.groupBoxTimerStatus.TabStop = false;
-            this.groupBoxTimerStatus.Text = "切断タイマーステータス";
+            this.toolStripMenuItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemHelpCheckUpdate,
+            this.toolStripSeparator3,
+            this.toolStripMenuItemHelpVersion});
+            this.toolStripMenuItemHelp.Name = "toolStripMenuItemHelp";
+            this.toolStripMenuItemHelp.Size = new System.Drawing.Size(75, 22);
+            this.toolStripMenuItemHelp.Text = "ヘルプ(&H)";
             // 
-            // label1
+            // toolStripMenuItemHelpVersion
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "次の設定時間：";
+            this.toolStripMenuItemHelpVersion.Name = "toolStripMenuItemHelpVersion";
+            this.toolStripMenuItemHelpVersion.Size = new System.Drawing.Size(190, 22);
+            this.toolStripMenuItemHelpVersion.Text = "バージョン情報(&A)...";
             // 
-            // label2
+            // timerMain
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "次の設定時間まであと：";
+            this.timerMain.Interval = 60000;
             // 
-            // labelSettingTime
+            // notifyIconMain
             // 
-            this.labelSettingTime.AutoSize = true;
-            this.labelSettingTime.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelSettingTime.Location = new System.Drawing.Point(18, 48);
-            this.labelSettingTime.Name = "labelSettingTime";
-            this.labelSettingTime.Size = new System.Drawing.Size(0, 36);
-            this.labelSettingTime.TabIndex = 2;
+            this.notifyIconMain.ContextMenuStrip = this.contextMenuStripTrayRight;
+            this.notifyIconMain.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMain.Icon")));
+            this.notifyIconMain.Text = "SkypeCallManager";
+            this.notifyIconMain.Visible = true;
             // 
-            // labelToSettingTime
+            // contextMenuStripTrayRight
             // 
-            this.labelToSettingTime.AutoSize = true;
-            this.labelToSettingTime.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelToSettingTime.Location = new System.Drawing.Point(18, 125);
-            this.labelToSettingTime.Name = "labelToSettingTime";
-            this.labelToSettingTime.Size = new System.Drawing.Size(0, 36);
-            this.labelToSettingTime.TabIndex = 3;
+            this.contextMenuStripTrayRight.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemTrayRightExit});
+            this.contextMenuStripTrayRight.Name = "contextMenuStripTrayRight";
+            this.contextMenuStripTrayRight.Size = new System.Drawing.Size(101, 26);
+            // 
+            // toolStripMenuItemTrayRightExit
+            // 
+            this.toolStripMenuItemTrayRightExit.Name = "toolStripMenuItemTrayRightExit";
+            this.toolStripMenuItemTrayRightExit.Size = new System.Drawing.Size(100, 22);
+            this.toolStripMenuItemTrayRightExit.Text = "終了";
+            // 
+            // toolStripMenuItemHelpCheckUpdate
+            // 
+            this.toolStripMenuItemHelpCheckUpdate.Name = "toolStripMenuItemHelpCheckUpdate";
+            this.toolStripMenuItemHelpCheckUpdate.Size = new System.Drawing.Size(190, 22);
+            this.toolStripMenuItemHelpCheckUpdate.Text = "最新版を確認";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(187, 6);
             // 
             // FormMain
             // 
@@ -264,6 +279,7 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.toolStripContainerMain);
             this.MainMenuStrip = this.menuStripMain;
+            this.MinimumSize = new System.Drawing.Size(300, 300);
             this.Name = "FormMain";
             this.Text = "FormMain";
             this.Load += new System.EventHandler(this.FormMainLoad);
@@ -274,13 +290,13 @@
             this.toolStripContainerMain.TopToolStripPanel.PerformLayout();
             this.toolStripContainerMain.ResumeLayout(false);
             this.toolStripContainerMain.PerformLayout();
-            this.menuStripMain.ResumeLayout(false);
-            this.menuStripMain.PerformLayout();
             this.statusStripMain.ResumeLayout(false);
             this.statusStripMain.PerformLayout();
-            this.contextMenuStripTrayRight.ResumeLayout(false);
             this.groupBoxTimerStatus.ResumeLayout(false);
             this.groupBoxTimerStatus.PerformLayout();
+            this.menuStripMain.ResumeLayout(false);
+            this.menuStripMain.PerformLayout();
+            this.contextMenuStripTrayRight.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -310,6 +326,8 @@
         private System.Windows.Forms.Label labelSettingTime;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemHelpCheckUpdate;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
 

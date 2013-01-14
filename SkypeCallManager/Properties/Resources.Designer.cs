@@ -4,14 +4,14 @@
 //     ランタイム バージョン:4.0.30319.18034
 //
 //     このファイルへの変更は、以下の状況下で不正な動作の原因になったり、
-//     コードが再生成されるときに損失したりします
+//     コードが再生成されるときに損失したりします。
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SkypeCallManager.Properties
-{
-
-
+namespace SkypeCallManager.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
     /// </summary>
@@ -22,49 +22,159 @@ namespace SkypeCallManager.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
-        ///   このクラスに使用される、キャッシュされた ResourceManager のインスタンスを返します。
+        ///   このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SkypeCallManager.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
         ///   現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   更新が完了しました。
+        ///
+        ///更新を有効にするにはアプリケーションを再起動する必要があります。
+        ///再起動しますか？ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string CompleteAndRestartRequestMessage {
+            get {
+                return ResourceManager.GetString("CompleteAndRestartRequestMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   確認 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Confirm {
+            get {
+                return ResourceManager.GetString("Confirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   最新版を確認中にエラーが発生しました。
+        ///ネットワークに繋がっているかを確認して再度お試しください。
+        /// に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string DeploymentDownloadExceptionMessage {
+            get {
+                return ResourceManager.GetString("DeploymentDownloadExceptionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   エラー に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   http://mittostar.info/ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string HomepageUri {
+            get {
+                return ResourceManager.GetString("HomepageUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   情報 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Information {
+            get {
+                return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   アプリケーションがうまく配置されていない可能性があります。
+        ///再インストールをお試しください。
+        /// に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string InvalidDeploymentExceptionMessage {
+            get {
+                return ResourceManager.GetString("InvalidDeploymentExceptionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   すでに更新を確認中です。
+        ///  に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string InvalidOperationExceptionMessage {
+            get {
+                return ResourceManager.GetString("InvalidOperationExceptionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   このアプリケーションについて に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string ThisApplication {
+            get {
+                return ResourceManager.GetString("ThisApplication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   アプリケーションに必要なアクセス許可が足りないため更新できません。
+        ///
+        /// に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string TrustNotGrantedExceptionMessage {
+            get {
+                return ResourceManager.GetString("TrustNotGrantedExceptionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   最新版が利用できます。更新しますか？ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string UpdateConfirmMessage {
+            get {
+                return ResourceManager.GetString("UpdateConfirmMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   警告 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string Warning {
+            get {
+                return ResourceManager.GetString("Warning", resourceCulture);
             }
         }
     }

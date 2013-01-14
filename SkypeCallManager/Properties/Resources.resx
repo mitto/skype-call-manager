@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,66 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CompleteAndRestartRequestMessage" xml:space="preserve">
+    <value>更新が完了しました。
+
+更新を有効にするにはアプリケーションを再起動する必要があります。
+再起動しますか？</value>
+    <comment>無事にアップデートが完了し再起動を要求する際に表示するメッセージ</comment>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>確認</value>
+    <comment>「確認」の文字列</comment>
+  </data>
+  <data name="DeploymentDownloadExceptionMessage" xml:space="preserve">
+    <value>最新版を確認中にエラーが発生しました。
+ネットワークに繋がっているかを確認して再度お試しください。
+</value>
+    <comment>例外発生時に使用するメッセージ</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラー</value>
+    <comment>英語の「Error」というテキスト</comment>
+  </data>
+  <data name="HomepageUri" xml:space="preserve">
+    <value>http://mittostar.info/</value>
+    <comment>ホームページのアドレス</comment>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>情報</value>
+    <comment>メッセージボックスなどで使うタイトル文字列</comment>
+  </data>
+  <data name="InvalidDeploymentExceptionMessage" xml:space="preserve">
+    <value>アプリケーションがうまく配置されていない可能性があります。
+再インストールをお試しください。
+</value>
+    <comment>例外発生時に使用するメッセージ</comment>
+  </data>
+  <data name="InvalidOperationExceptionMessage" xml:space="preserve">
+    <value>すでに更新を確認中です。
+ </value>
+    <comment>例外発生時に使用するメッセージ</comment>
+  </data>
+  <data name="ThisApplication" xml:space="preserve">
+    <value>このアプリケーションについて</value>
+  </data>
+  <data name="TrustNotGrantedExceptionMessage" xml:space="preserve">
+    <value>アプリケーションに必要なアクセス許可が足りないため更新できません。
+
+</value>
+    <comment>例外発生時に使用するメッセージ</comment>
+  </data>
+  <data name="UpdateConfirmMessage" xml:space="preserve">
+    <value>最新版が利用できます。更新しますか？</value>
+    <comment>最新版が利用できる際に表示するメッセージ</comment>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+    <comment>メッセージボックスなどで使う文字列</comment>
+  </data>
 </root>

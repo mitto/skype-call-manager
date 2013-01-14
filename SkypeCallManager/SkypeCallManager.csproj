@@ -62,6 +62,7 @@
     <Compile Include="SettingManager.cs" />
     <Compile Include="SkypeManager.cs" />
     <Compile Include="SkypeManagerBase.cs" />
+    <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +77,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
