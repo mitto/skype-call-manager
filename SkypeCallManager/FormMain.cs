@@ -23,6 +23,7 @@ namespace SkypeCallManager
             RegisterEventHandler();
 
             timerMain.Enabled = true;
+            Icon = Properties.Resources.skype;
         }
 
         private void RegisterEventHandler()

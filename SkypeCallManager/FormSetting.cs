@@ -20,6 +20,7 @@ namespace SkypeCallManager
         {
             LoadSettings();
             RegisterEventHandler();
+            Icon = Properties.Resources.skype;
         }
 
         private void LoadSettings()

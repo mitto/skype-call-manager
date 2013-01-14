@@ -48,13 +48,13 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemToolCloseActiveCalls = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemHelpCheckUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemHelpVersion = new System.Windows.Forms.ToolStripMenuItem();
             this.timerMain = new System.Windows.Forms.Timer(this.components);
             this.notifyIconMain = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStripTrayRight = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemTrayRightExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemHelpCheckUpdate = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripContainerMain.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.TopToolStripPanel.SuspendLayout();
@@ -231,6 +231,17 @@
             this.toolStripMenuItemHelp.Size = new System.Drawing.Size(75, 22);
             this.toolStripMenuItemHelp.Text = "ヘルプ(&H)";
             // 
+            // toolStripMenuItemHelpCheckUpdate
+            // 
+            this.toolStripMenuItemHelpCheckUpdate.Name = "toolStripMenuItemHelpCheckUpdate";
+            this.toolStripMenuItemHelpCheckUpdate.Size = new System.Drawing.Size(190, 22);
+            this.toolStripMenuItemHelpCheckUpdate.Text = "最新版を確認";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(187, 6);
+            // 
             // toolStripMenuItemHelpVersion
             // 
             this.toolStripMenuItemHelpVersion.Name = "toolStripMenuItemHelpVersion";
@@ -261,17 +272,6 @@
             this.toolStripMenuItemTrayRightExit.Size = new System.Drawing.Size(100, 22);
             this.toolStripMenuItemTrayRightExit.Text = "終了";
             // 
-            // toolStripMenuItemHelpCheckUpdate
-            // 
-            this.toolStripMenuItemHelpCheckUpdate.Name = "toolStripMenuItemHelpCheckUpdate";
-            this.toolStripMenuItemHelpCheckUpdate.Size = new System.Drawing.Size(190, 22);
-            this.toolStripMenuItemHelpCheckUpdate.Text = "最新版を確認";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(187, 6);
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -281,7 +281,7 @@
             this.MainMenuStrip = this.menuStripMain;
             this.MinimumSize = new System.Drawing.Size(300, 300);
             this.Name = "FormMain";
-            this.Text = "FormMain";
+            this.Text = "SkypeCallManager";
             this.Load += new System.EventHandler(this.FormMainLoad);
             this.toolStripContainerMain.BottomToolStripPanel.ResumeLayout(false);
             this.toolStripContainerMain.BottomToolStripPanel.PerformLayout();
