@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.toolStripContainerMain = new System.Windows.Forms.ToolStripContainer();
+            this.buttonEndCall = new System.Windows.Forms.Button();
             this.buttonAttachCheck = new System.Windows.Forms.Button();
             this.buttonSkypeAttach = new System.Windows.Forms.Button();
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
@@ -40,7 +41,8 @@
             this.toolStripMenuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemHelpVersion = new System.Windows.Forms.ToolStripMenuItem();
             this.timerMain = new System.Windows.Forms.Timer(this.components);
-            this.buttonEndCall = new System.Windows.Forms.Button();
+            this.statusStripMain = new System.Windows.Forms.StatusStrip();
+            this.toolStripContainerMain.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.TopToolStripPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
@@ -50,12 +52,16 @@
             // toolStripContainerMain
             // 
             // 
+            // toolStripContainerMain.BottomToolStripPanel
+            // 
+            this.toolStripContainerMain.BottomToolStripPanel.Controls.Add(this.statusStripMain);
+            // 
             // toolStripContainerMain.ContentPanel
             // 
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.buttonEndCall);
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.buttonAttachCheck);
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.buttonSkypeAttach);
-            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 236);
+            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 214);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainerMain.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainerMain.Name = "toolStripContainerMain";
@@ -66,6 +72,15 @@
             // toolStripContainerMain.TopToolStripPanel
             // 
             this.toolStripContainerMain.TopToolStripPanel.Controls.Add(this.menuStripMain);
+            // 
+            // buttonEndCall
+            // 
+            this.buttonEndCall.Location = new System.Drawing.Point(12, 76);
+            this.buttonEndCall.Name = "buttonEndCall";
+            this.buttonEndCall.Size = new System.Drawing.Size(75, 23);
+            this.buttonEndCall.TabIndex = 2;
+            this.buttonEndCall.Text = "通話終了";
+            this.buttonEndCall.UseVisualStyleBackColor = true;
             // 
             // buttonAttachCheck
             // 
@@ -142,14 +157,13 @@
             // 
             this.timerMain.Interval = 60000;
             // 
-            // buttonEndCall
+            // statusStripMain
             // 
-            this.buttonEndCall.Location = new System.Drawing.Point(12, 76);
-            this.buttonEndCall.Name = "buttonEndCall";
-            this.buttonEndCall.Size = new System.Drawing.Size(75, 23);
-            this.buttonEndCall.TabIndex = 2;
-            this.buttonEndCall.Text = "通話終了";
-            this.buttonEndCall.UseVisualStyleBackColor = true;
+            this.statusStripMain.Dock = System.Windows.Forms.DockStyle.None;
+            this.statusStripMain.Location = new System.Drawing.Point(0, 0);
+            this.statusStripMain.Name = "statusStripMain";
+            this.statusStripMain.Size = new System.Drawing.Size(284, 22);
+            this.statusStripMain.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -161,6 +175,8 @@
             this.Name = "FormMain";
             this.Text = "FormMain";
             this.Load += new System.EventHandler(this.FormMainLoad);
+            this.toolStripContainerMain.BottomToolStripPanel.ResumeLayout(false);
+            this.toolStripContainerMain.BottomToolStripPanel.PerformLayout();
             this.toolStripContainerMain.ContentPanel.ResumeLayout(false);
             this.toolStripContainerMain.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainerMain.TopToolStripPanel.PerformLayout();
@@ -186,6 +202,7 @@
         private System.Windows.Forms.Button buttonSkypeAttach;
         private System.Windows.Forms.Button buttonAttachCheck;
         private System.Windows.Forms.Button buttonEndCall;
+        private System.Windows.Forms.StatusStrip statusStripMain;
     }
 }
 
