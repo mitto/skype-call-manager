@@ -172,6 +172,7 @@
             // 
             // notifyIconMain
             // 
+            this.notifyIconMain.ContextMenuStrip = this.contextMenuStripTrayRight;
             this.notifyIconMain.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMain.Icon")));
             this.notifyIconMain.Text = "SkypeCallManager";
             this.notifyIconMain.Visible = true;
@@ -181,12 +182,12 @@
             this.contextMenuStripTrayRight.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemTrayRightExit});
             this.contextMenuStripTrayRight.Name = "contextMenuStripTrayRight";
-            this.contextMenuStripTrayRight.Size = new System.Drawing.Size(153, 48);
+            this.contextMenuStripTrayRight.Size = new System.Drawing.Size(101, 26);
             // 
             // toolStripMenuItemTrayRightExit
             // 
             this.toolStripMenuItemTrayRightExit.Name = "toolStripMenuItemTrayRightExit";
-            this.toolStripMenuItemTrayRightExit.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemTrayRightExit.Size = new System.Drawing.Size(100, 22);
             this.toolStripMenuItemTrayRightExit.Text = "終了";
             // 
             // FormMain
