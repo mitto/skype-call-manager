@@ -76,6 +76,7 @@ namespace SkypeCallManager
                     var diff = stoptime - now;
 
                     UpdateLabelStatus();
+                    if (diff.Hours > 0) return;
 
                     switch (diff.Minutes)
                     {
