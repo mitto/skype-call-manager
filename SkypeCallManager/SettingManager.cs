@@ -15,11 +15,13 @@ namespace SkypeCallManager
         {
             get
             {
-                return Settings.Default.CallStopTime;
+                var time = Settings.Default.CallStopTime;
+                var now = DateTime.Now;
+                return new DateTime(now.Year, now.Month, now.Day, time.Hours, time.Minutes, 0);
             }
             set
             {
-                Settings.Default.CallStopTime = value;
+                Settings.Default.CallStopTime = new TimeSpan(value.Hour, value.Minute, 0);
                 Settings.Default.Save();
             }
         }

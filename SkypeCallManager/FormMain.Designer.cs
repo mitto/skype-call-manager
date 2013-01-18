@@ -75,11 +75,11 @@
             // toolStripContainerMain.ContentPanel
             // 
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.groupBoxTimerStatus);
-            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 213);
+            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(334, 213);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainerMain.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainerMain.Name = "toolStripContainerMain";
-            this.toolStripContainerMain.Size = new System.Drawing.Size(284, 262);
+            this.toolStripContainerMain.Size = new System.Drawing.Size(334, 262);
             this.toolStripContainerMain.TabIndex = 0;
             this.toolStripContainerMain.Text = "toolStripContainer1";
             // 
@@ -94,7 +94,7 @@
             this.toolStripStatusLabelSkypeAttachStatus});
             this.statusStripMain.Location = new System.Drawing.Point(0, 0);
             this.statusStripMain.Name = "statusStripMain";
-            this.statusStripMain.Size = new System.Drawing.Size(284, 23);
+            this.statusStripMain.Size = new System.Drawing.Size(334, 23);
             this.statusStripMain.TabIndex = 0;
             // 
             // toolStripStatusLabelSkypeAttachStatus
@@ -113,7 +113,7 @@
             this.groupBoxTimerStatus.Controls.Add(this.label1);
             this.groupBoxTimerStatus.Location = new System.Drawing.Point(12, 15);
             this.groupBoxTimerStatus.Name = "groupBoxTimerStatus";
-            this.groupBoxTimerStatus.Size = new System.Drawing.Size(260, 183);
+            this.groupBoxTimerStatus.Size = new System.Drawing.Size(310, 183);
             this.groupBoxTimerStatus.TabIndex = 0;
             this.groupBoxTimerStatus.TabStop = false;
             this.groupBoxTimerStatus.Text = "切断タイマーステータス";
@@ -163,7 +163,7 @@
             this.toolStripMenuItemHelp});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
-            this.menuStripMain.Size = new System.Drawing.Size(284, 26);
+            this.menuStripMain.Size = new System.Drawing.Size(334, 26);
             this.menuStripMain.TabIndex = 0;
             this.menuStripMain.Text = "menuStrip1";
             // 
@@ -250,7 +250,7 @@
             // 
             // timerMain
             // 
-            this.timerMain.Interval = 60000;
+            this.timerMain.Interval = 1000;
             // 
             // notifyIconMain
             // 
@@ -276,10 +276,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(334, 262);
             this.Controls.Add(this.toolStripContainerMain);
             this.MainMenuStrip = this.menuStripMain;
-            this.MinimumSize = new System.Drawing.Size(300, 300);
+            this.MinimumSize = new System.Drawing.Size(350, 300);
             this.Name = "FormMain";
             this.Text = "SkypeCallManager";
             this.Load += new System.EventHandler(this.FormMainLoad);

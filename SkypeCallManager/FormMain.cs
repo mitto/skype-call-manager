@@ -76,12 +76,15 @@ namespace SkypeCallManager
                     var diff = stoptime - now;
 
                     UpdateLabelStatus();
-                    if (diff.Hours > 0) return;
+                    if (diff.Hours > 0 || diff.Seconds != 0) return;
 
                     var message = "";
 
                     switch (diff.Minutes)
                     {
+                        case 0:
+                            _skypeManager.FinishActiveCall();
+                            break;
                         case 1:
                             message = SettingManager.OneMinuteMessage;
                             break;
@@ -99,14 +102,7 @@ namespace SkypeCallManager
                             break;
                     }
 
-                    if (string.IsNullOrWhiteSpace(message)) return;
-
-                    _skypeManager.SendMessageToCallPartner(message);
-
-                    if (now.Hour == stoptime.Hour && now.Minute == stoptime.Minute)
-                    {
-                        _skypeManager.FinishActiveCall();
-                    }
+                    if (!string.IsNullOrWhiteSpace(message)) _skypeManager.SendMessageToCallPartner(message);
                 };
 
             _skypeManager.ChangeAttachmentStatus += (sender, e) =>
@@ -144,8 +140,8 @@ namespace SkypeCallManager
                 diff = calltime - now;
             }
 
-            labelSettingTime.Text = String.Format("{0}", calltime.ToString("yyyy/MM/dd HH:mm"));
-            labelToSettingTime.Text = String.Format("{0}時間{1}分くらい", diff.Hours, diff.Minutes);
+            labelSettingTime.Text = String.Format("{0}", calltime.ToString("yyyy/MM/dd HH:mm:ss"));
+            labelToSettingTime.Text = String.Format("{0:00}時間{1:00}分{2:00}秒くらい", diff.Hours, diff.Minutes, diff.Seconds);
         }
     }
 }
