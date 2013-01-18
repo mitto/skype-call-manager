@@ -102,7 +102,18 @@ namespace SkypeCallManager
                             break;
                     }
 
-                    if (!string.IsNullOrWhiteSpace(message)) _skypeManager.SendMessageToCallPartner(message);
+                    if (string.IsNullOrWhiteSpace(message)) return;
+
+                    if (SettingManager.IsSignAfter)
+                    {
+                        message += SettingManager.Sign;
+                    }
+                    else
+                    {
+                        message = SettingManager.Sign + message;
+                    }
+
+                    _skypeManager.SendMessageToCallPartner(message);
                 };
 
             _skypeManager.ChangeAttachmentStatus += (sender, e) =>

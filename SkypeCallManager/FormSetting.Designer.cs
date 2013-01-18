@@ -290,7 +290,7 @@
             this.groupBoxChatSign.Size = new System.Drawing.Size(310, 86);
             this.groupBoxChatSign.TabIndex = 3;
             this.groupBoxChatSign.TabStop = false;
-            this.groupBoxChatSign.Text = "自動送信時に付ける署名";
+            this.groupBoxChatSign.Text = "送信元";
             // 
             // radioButtonSignBefore
             // 
@@ -319,17 +319,17 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(8, 52);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.Size = new System.Drawing.Size(126, 12);
             this.label7.TabIndex = 2;
-            this.label7.Text = "署名";
+            this.label7.Text = "メッセージに付ける送信元";
             // 
             // textBoxSign
             // 
             this.textBoxSign.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSign.Location = new System.Drawing.Point(70, 49);
+            this.textBoxSign.Location = new System.Drawing.Point(140, 49);
             this.textBoxSign.Name = "textBoxSign";
-            this.textBoxSign.Size = new System.Drawing.Size(234, 19);
+            this.textBoxSign.Size = new System.Drawing.Size(164, 19);
             this.textBoxSign.TabIndex = 3;
             // 
             // FormSetting

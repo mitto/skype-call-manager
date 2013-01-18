@@ -6,19 +6,25 @@
       <Value Profile="(Default)">20:00:00</Value>
     </Setting>
     <Setting Name="OneMinuteMessage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">あと1分ぐらいで通話を終了します(from call manager)</Value>
+      <Value Profile="(Default)">あと1分ぐらいで通話を終了します</Value>
     </Setting>
     <Setting Name="ThreeMinuteMessage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">あと3分ぐらいで通話を終了します(from call manager)</Value>
+      <Value Profile="(Default)">あと3分ぐらいで通話を終了します</Value>
     </Setting>
     <Setting Name="FiveMinuteMessage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">あと5分ぐらいで通話を終了します(from call manager)</Value>
+      <Value Profile="(Default)">あと5分ぐらいで通話を終了します</Value>
     </Setting>
     <Setting Name="TenMinuteMessage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">あと10分ぐらいで通話を終了します(from call manager)</Value>
+      <Value Profile="(Default)">あと10分ぐらいで通話を終了します</Value>
     </Setting>
     <Setting Name="FifteenMinuteMessage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">あと15分ぐらいで通話を終了します(from call manager)</Value>
+      <Value Profile="(Default)">あと15分ぐらいで通話を終了します</Value>
+    </Setting>
+    <Setting Name="IsSignAfter" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Sign" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[通話マネージャーから送信]</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -37,7 +37,7 @@ namespace SkypeCallManager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("あと1分ぐらいで通話を終了します(from call manager)")]
+        [global::System.Configuration.DefaultSettingValueAttribute("あと1分ぐらいで通話を終了します")]
         public string OneMinuteMessage {
             get {
                 return ((string)(this["OneMinuteMessage"]));
@@ -49,7 +49,7 @@ namespace SkypeCallManager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("あと3分ぐらいで通話を終了します(from call manager)")]
+        [global::System.Configuration.DefaultSettingValueAttribute("あと3分ぐらいで通話を終了します")]
         public string ThreeMinuteMessage {
             get {
                 return ((string)(this["ThreeMinuteMessage"]));
@@ -61,7 +61,7 @@ namespace SkypeCallManager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("あと5分ぐらいで通話を終了します(from call manager)")]
+        [global::System.Configuration.DefaultSettingValueAttribute("あと5分ぐらいで通話を終了します")]
         public string FiveMinuteMessage {
             get {
                 return ((string)(this["FiveMinuteMessage"]));
@@ -73,7 +73,7 @@ namespace SkypeCallManager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("あと10分ぐらいで通話を終了します(from call manager)")]
+        [global::System.Configuration.DefaultSettingValueAttribute("あと10分ぐらいで通話を終了します")]
         public string TenMinuteMessage {
             get {
                 return ((string)(this["TenMinuteMessage"]));
@@ -85,13 +85,37 @@ namespace SkypeCallManager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("あと15分ぐらいで通話を終了します(from call manager)")]
+        [global::System.Configuration.DefaultSettingValueAttribute("あと15分ぐらいで通話を終了します")]
         public string FifteenMinuteMessage {
             get {
                 return ((string)(this["FifteenMinuteMessage"]));
             }
             set {
                 this["FifteenMinuteMessage"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool IsSignAfter {
+            get {
+                return ((bool)(this["IsSignAfter"]));
+            }
+            set {
+                this["IsSignAfter"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[通話マネージャーから送信]")]
+        public string Sign {
+            get {
+                return ((string)(this["Sign"]));
+            }
+            set {
+                this["Sign"] = value;
             }
         }
     }

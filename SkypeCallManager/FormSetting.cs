@@ -31,6 +31,16 @@ namespace SkypeCallManager
             textBoxFiveMinuteMessage.Text = SettingManager.FiveMinuteMessage;
             textBoxTenMinuteMessage.Text = SettingManager.TenMinuteMessage;
             textBoxFifteenMinuteMessage.Text = SettingManager.FifteenMinuteMessage;
+            textBoxSign.Text = SettingManager.Sign;
+
+            if (SettingManager.IsSignAfter)
+            {
+                radioButtonSignAfter.Checked = true;
+            }
+            else
+            {
+                radioButtonSignBefore.Checked = true;
+            }
         }
 
         private void RegisterEventHandler()
@@ -44,6 +54,11 @@ namespace SkypeCallManager
             textBoxFiveMinuteMessage.TextChanged += (sender, e) => SettingManager.FiveMinuteMessage = textBoxFiveMinuteMessage.Text;
             textBoxTenMinuteMessage.TextChanged += (sender, e) => SettingManager.TenMinuteMessage = textBoxTenMinuteMessage.Text;
             textBoxFifteenMinuteMessage.TextChanged += (sender, e) => SettingManager.FifteenMinuteMessage = textBoxFifteenMinuteMessage.Text;
+            textBoxSign.TextChanged += (sender, e) => SettingManager.Sign = textBoxSign.Text;
+
+            radioButtonSignAfter.Click += (sender, e) => SettingManager.IsSignAfter = true;
+            radioButtonSignBefore.Click += (sender, e) => SettingManager.IsSignAfter = false;
         }
+
     }
 }

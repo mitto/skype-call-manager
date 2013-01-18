@@ -90,5 +90,31 @@ namespace SkypeCallManager
                 Settings.Default.Save();
             }
         }
+
+        public static bool IsSignAfter
+        {
+            get
+            {
+                return Settings.Default.IsSignAfter;
+            }
+            set
+            {
+                Settings.Default.IsSignAfter = value;
+                Settings.Default.Save();
+            }
+        }
+
+        public static string Sign
+        {
+            get
+            {
+                return Settings.Default.Sign;
+            }
+            set
+            {
+                Settings.Default.Sign = value;
+                Settings.Default.Save();
+            }
+        }
     }
 }
