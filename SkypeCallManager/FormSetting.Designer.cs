@@ -48,6 +48,11 @@
             this.textBoxFifteenMinuteMessage = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.groupBoxChatSign = new System.Windows.Forms.GroupBox();
+            this.radioButtonSignBefore = new System.Windows.Forms.RadioButton();
+            this.radioButtonSignAfter = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxSign = new System.Windows.Forms.TextBox();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -56,6 +61,7 @@
             this.tabPageChatSetting.SuspendLayout();
             this.groupBoxChatMessages.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBoxChatSign.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainerMain
@@ -83,7 +89,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 273);
+            this.panel1.Size = new System.Drawing.Size(334, 279);
             this.panel1.TabIndex = 0;
             // 
             // tabControlMain
@@ -94,7 +100,7 @@
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(334, 273);
+            this.tabControlMain.Size = new System.Drawing.Size(334, 279);
             this.tabControlMain.TabIndex = 0;
             // 
             // tabPageGeneralSetting
@@ -131,11 +137,12 @@
             // 
             // tabPageChatSetting
             // 
+            this.tabPageChatSetting.Controls.Add(this.groupBoxChatSign);
             this.tabPageChatSetting.Controls.Add(this.groupBoxChatMessages);
             this.tabPageChatSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageChatSetting.Name = "tabPageChatSetting";
             this.tabPageChatSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageChatSetting.Size = new System.Drawing.Size(326, 247);
+            this.tabPageChatSetting.Size = new System.Drawing.Size(326, 253);
             this.tabPageChatSetting.TabIndex = 1;
             this.tabPageChatSetting.Text = "チャット";
             this.tabPageChatSetting.UseVisualStyleBackColor = true;
@@ -156,7 +163,7 @@
             this.groupBoxChatMessages.Controls.Add(this.textBoxFifteenMinuteMessage);
             this.groupBoxChatMessages.Location = new System.Drawing.Point(8, 6);
             this.groupBoxChatMessages.Name = "groupBoxChatMessages";
-            this.groupBoxChatMessages.Size = new System.Drawing.Size(310, 185);
+            this.groupBoxChatMessages.Size = new System.Drawing.Size(310, 149);
             this.groupBoxChatMessages.TabIndex = 2;
             this.groupBoxChatMessages.TabStop = false;
             this.groupBoxChatMessages.Text = "切断前に送信するメッセージ";
@@ -255,9 +262,9 @@
             // 
             this.panel2.Controls.Add(this.buttonClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 273);
+            this.panel2.Location = new System.Drawing.Point(0, 279);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(334, 39);
+            this.panel2.Size = new System.Drawing.Size(334, 33);
             this.panel2.TabIndex = 1;
             // 
             // buttonClose
@@ -265,10 +272,65 @@
             this.buttonClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonClose.Location = new System.Drawing.Point(0, 0);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(334, 39);
+            this.buttonClose.Size = new System.Drawing.Size(334, 33);
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "閉じる";
             this.buttonClose.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxChatSign
+            // 
+            this.groupBoxChatSign.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxChatSign.Controls.Add(this.textBoxSign);
+            this.groupBoxChatSign.Controls.Add(this.label7);
+            this.groupBoxChatSign.Controls.Add(this.radioButtonSignAfter);
+            this.groupBoxChatSign.Controls.Add(this.radioButtonSignBefore);
+            this.groupBoxChatSign.Location = new System.Drawing.Point(8, 161);
+            this.groupBoxChatSign.Name = "groupBoxChatSign";
+            this.groupBoxChatSign.Size = new System.Drawing.Size(310, 86);
+            this.groupBoxChatSign.TabIndex = 3;
+            this.groupBoxChatSign.TabStop = false;
+            this.groupBoxChatSign.Text = "自動送信時に付ける署名";
+            // 
+            // radioButtonSignBefore
+            // 
+            this.radioButtonSignBefore.AutoSize = true;
+            this.radioButtonSignBefore.Location = new System.Drawing.Point(10, 18);
+            this.radioButtonSignBefore.Name = "radioButtonSignBefore";
+            this.radioButtonSignBefore.Size = new System.Drawing.Size(75, 16);
+            this.radioButtonSignBefore.TabIndex = 0;
+            this.radioButtonSignBefore.Text = "前に付ける";
+            this.radioButtonSignBefore.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSignAfter
+            // 
+            this.radioButtonSignAfter.AutoSize = true;
+            this.radioButtonSignAfter.Checked = true;
+            this.radioButtonSignAfter.Location = new System.Drawing.Point(104, 18);
+            this.radioButtonSignAfter.Name = "radioButtonSignAfter";
+            this.radioButtonSignAfter.Size = new System.Drawing.Size(84, 16);
+            this.radioButtonSignAfter.TabIndex = 1;
+            this.radioButtonSignAfter.TabStop = true;
+            this.radioButtonSignAfter.Text = "後ろに付ける";
+            this.radioButtonSignAfter.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "署名";
+            // 
+            // textBoxSign
+            // 
+            this.textBoxSign.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSign.Location = new System.Drawing.Point(70, 49);
+            this.textBoxSign.Name = "textBoxSign";
+            this.textBoxSign.Size = new System.Drawing.Size(234, 19);
+            this.textBoxSign.TabIndex = 3;
             // 
             // FormSetting
             // 
@@ -295,6 +357,8 @@
             this.groupBoxChatMessages.ResumeLayout(false);
             this.groupBoxChatMessages.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.groupBoxChatSign.ResumeLayout(false);
+            this.groupBoxChatSign.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -321,6 +385,11 @@
         private System.Windows.Forms.TextBox textBoxThreeMinuteMessage;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxOneMinuteMessage;
+        private System.Windows.Forms.GroupBox groupBoxChatSign;
+        private System.Windows.Forms.TextBox textBoxSign;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton radioButtonSignAfter;
+        private System.Windows.Forms.RadioButton radioButtonSignBefore;
 
     }
 }
