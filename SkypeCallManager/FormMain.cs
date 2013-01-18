@@ -78,29 +78,30 @@ namespace SkypeCallManager
                     UpdateLabelStatus();
                     if (diff.Hours > 0) return;
 
+                    var message = "";
+
                     switch (diff.Minutes)
                     {
                         case 1:
-                            if (string.IsNullOrWhiteSpace(SettingManager.OneMinuteMessage)) return;
-                            _skypeManager.SendMessageToCallPartner(SettingManager.OneMinuteMessage);
+                            message = SettingManager.OneMinuteMessage;
                             break;
                         case 3:
-                            if (string.IsNullOrWhiteSpace(SettingManager.ThreeMinuteMessage)) return;
-                            _skypeManager.SendMessageToCallPartner(SettingManager.ThreeMinuteMessage);
+                            message = SettingManager.ThreeMinuteMessage;
                             break;
                         case 5:
-                            if (string.IsNullOrWhiteSpace(SettingManager.FiveMinuteMessage)) return;
-                            _skypeManager.SendMessageToCallPartner(SettingManager.FiveMinuteMessage);
+                            message = SettingManager.FiveMinuteMessage;
                             break;
                         case 10:
-                            if (string.IsNullOrWhiteSpace(SettingManager.TenMinuteMessage)) return;
-                            _skypeManager.SendMessageToCallPartner(SettingManager.TenMinuteMessage);
+                            message = SettingManager.TenMinuteMessage;
                             break;
                         case 15:
-                            if (string.IsNullOrWhiteSpace(SettingManager.FifteenMinuteMessage)) return;
-                            _skypeManager.SendMessageToCallPartner(SettingManager.FifteenMinuteMessage);
+                            message = SettingManager.FifteenMinuteMessage;
                             break;
                     }
+
+                    if (string.IsNullOrWhiteSpace(message)) return;
+
+                    _skypeManager.SendMessageToCallPartner(message);
 
                     if (now.Hour == stoptime.Hour && now.Minute == stoptime.Minute)
                     {
@@ -108,8 +109,7 @@ namespace SkypeCallManager
                     }
                 };
 
-            _skypeManager.ChangeAttachmentStatus +=
-                (sender, e) =>
+            _skypeManager.ChangeAttachmentStatus += (sender, e) =>
                 {
                     toolStripStatusLabelSkypeAttachStatus.Text = SkypeManager.GetAttachmentStatusMessage(_skypeManager.AttachmentStatus);
                 };
