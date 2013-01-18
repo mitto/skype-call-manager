@@ -141,7 +141,16 @@ namespace SkypeCallManager
             }
 
             labelSettingTime.Text = String.Format("{0}", calltime.ToString("yyyy/MM/dd HH:mm:ss"));
-            labelToSettingTime.Text = String.Format("{0:00}時間{1:00}分{2:00}秒くらい", diff.Hours, diff.Minutes, diff.Seconds);
+            var message = "";
+            if (_skypeManager.ExistsActiveCalls)
+            {
+                message = String.Format("{0:00}時間{1:00}分{2:00}秒くらい", diff.Hours, diff.Minutes, diff.Seconds);
+            }
+            else
+            {
+                message = "No active calls.";
+            }
+            labelToSettingTime.Text = message;
         }
     }
 }
