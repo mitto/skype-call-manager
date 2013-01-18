@@ -66,13 +66,13 @@
             // 
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel1);
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel2);
-            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(284, 262);
+            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(334, 312);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainerMain.LeftToolStripPanelVisible = false;
             this.toolStripContainerMain.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainerMain.Name = "toolStripContainerMain";
             this.toolStripContainerMain.RightToolStripPanelVisible = false;
-            this.toolStripContainerMain.Size = new System.Drawing.Size(284, 262);
+            this.toolStripContainerMain.Size = new System.Drawing.Size(334, 312);
             this.toolStripContainerMain.TabIndex = 0;
             this.toolStripContainerMain.Text = "toolStripContainer1";
             this.toolStripContainerMain.TopToolStripPanelVisible = false;
@@ -83,7 +83,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(284, 223);
+            this.panel1.Size = new System.Drawing.Size(334, 273);
             this.panel1.TabIndex = 0;
             // 
             // tabControlMain
@@ -94,7 +94,7 @@
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(284, 223);
+            this.tabControlMain.Size = new System.Drawing.Size(334, 273);
             this.tabControlMain.TabIndex = 0;
             // 
             // tabPageGeneralSetting
@@ -104,16 +104,17 @@
             this.tabPageGeneralSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneralSetting.Name = "tabPageGeneralSetting";
             this.tabPageGeneralSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGeneralSetting.Size = new System.Drawing.Size(276, 197);
+            this.tabPageGeneralSetting.Size = new System.Drawing.Size(326, 247);
             this.tabPageGeneralSetting.TabIndex = 0;
             this.tabPageGeneralSetting.Text = "全般";
             this.tabPageGeneralSetting.UseVisualStyleBackColor = true;
             // 
             // dateTimePickerStopTime
             // 
+            this.dateTimePickerStopTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePickerStopTime.CustomFormat = "HH:mm";
             this.dateTimePickerStopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerStopTime.Location = new System.Drawing.Point(209, 6);
+            this.dateTimePickerStopTime.Location = new System.Drawing.Point(254, 7);
             this.dateTimePickerStopTime.Name = "dateTimePickerStopTime";
             this.dateTimePickerStopTime.ShowUpDown = true;
             this.dateTimePickerStopTime.Size = new System.Drawing.Size(64, 19);
@@ -134,13 +135,15 @@
             this.tabPageChatSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageChatSetting.Name = "tabPageChatSetting";
             this.tabPageChatSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageChatSetting.Size = new System.Drawing.Size(276, 197);
+            this.tabPageChatSetting.Size = new System.Drawing.Size(326, 247);
             this.tabPageChatSetting.TabIndex = 1;
             this.tabPageChatSetting.Text = "チャット";
             this.tabPageChatSetting.UseVisualStyleBackColor = true;
             // 
             // groupBoxChatMessages
             // 
+            this.groupBoxChatMessages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxChatMessages.Controls.Add(this.label2);
             this.groupBoxChatMessages.Controls.Add(this.label3);
             this.groupBoxChatMessages.Controls.Add(this.label4);
@@ -153,7 +156,7 @@
             this.groupBoxChatMessages.Controls.Add(this.textBoxFifteenMinuteMessage);
             this.groupBoxChatMessages.Location = new System.Drawing.Point(8, 6);
             this.groupBoxChatMessages.Name = "groupBoxChatMessages";
-            this.groupBoxChatMessages.Size = new System.Drawing.Size(260, 185);
+            this.groupBoxChatMessages.Size = new System.Drawing.Size(310, 185);
             this.groupBoxChatMessages.TabIndex = 2;
             this.groupBoxChatMessages.TabStop = false;
             this.groupBoxChatMessages.Text = "切断前に送信するメッセージ";
@@ -205,46 +208,56 @@
             // 
             // textBoxOneMinuteMessage
             // 
+            this.textBoxOneMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxOneMinuteMessage.Location = new System.Drawing.Point(70, 18);
             this.textBoxOneMinuteMessage.Name = "textBoxOneMinuteMessage";
-            this.textBoxOneMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxOneMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxOneMinuteMessage.TabIndex = 1;
             // 
             // textBoxThreeMinuteMessage
             // 
+            this.textBoxThreeMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxThreeMinuteMessage.Location = new System.Drawing.Point(70, 43);
             this.textBoxThreeMinuteMessage.Name = "textBoxThreeMinuteMessage";
-            this.textBoxThreeMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxThreeMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxThreeMinuteMessage.TabIndex = 3;
             // 
             // textBoxFiveMinuteMessage
             // 
+            this.textBoxFiveMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxFiveMinuteMessage.Location = new System.Drawing.Point(70, 68);
             this.textBoxFiveMinuteMessage.Name = "textBoxFiveMinuteMessage";
-            this.textBoxFiveMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxFiveMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxFiveMinuteMessage.TabIndex = 5;
             // 
             // textBoxTenMinuteMessage
             // 
+            this.textBoxTenMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxTenMinuteMessage.Location = new System.Drawing.Point(70, 93);
             this.textBoxTenMinuteMessage.Name = "textBoxTenMinuteMessage";
-            this.textBoxTenMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxTenMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxTenMinuteMessage.TabIndex = 7;
             // 
             // textBoxFifteenMinuteMessage
             // 
+            this.textBoxFifteenMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxFifteenMinuteMessage.Location = new System.Drawing.Point(70, 118);
             this.textBoxFifteenMinuteMessage.Name = "textBoxFifteenMinuteMessage";
-            this.textBoxFifteenMinuteMessage.Size = new System.Drawing.Size(184, 19);
+            this.textBoxFifteenMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxFifteenMinuteMessage.TabIndex = 9;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.buttonClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 223);
+            this.panel2.Location = new System.Drawing.Point(0, 273);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(284, 39);
+            this.panel2.Size = new System.Drawing.Size(334, 39);
             this.panel2.TabIndex = 1;
             // 
             // buttonClose
@@ -252,7 +265,7 @@
             this.buttonClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonClose.Location = new System.Drawing.Point(0, 0);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(284, 39);
+            this.buttonClose.Size = new System.Drawing.Size(334, 39);
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "閉じる";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -262,11 +275,12 @@
             this.AcceptButton = this.buttonClose;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(334, 312);
+            this.ControlBox = false;
             this.Controls.Add(this.toolStripContainerMain);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(350, 350);
             this.Name = "FormSetting";
             this.Text = "設定";
             this.Load += new System.EventHandler(this.FormSettingLoad);
