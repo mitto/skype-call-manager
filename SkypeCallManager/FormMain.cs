@@ -80,7 +80,7 @@ namespace SkypeCallManager
 
                     var message = "";
 
-                    switch (diff.Minutes)
+                    switch ((int)diff.TotalMinutes)
                     {
                         case 0:
                             _skypeManager.FinishActiveCall();
