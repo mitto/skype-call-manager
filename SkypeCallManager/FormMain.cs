@@ -76,7 +76,7 @@ namespace SkypeCallManager
                     var diff = stoptime - now;
 
                     UpdateLabelStatus();
-                    if (_skypeManager.ExistsActiveCalls || diff.Hours > 0 || diff.Seconds != 0) return;
+                    if (!_skypeManager.ExistsActiveCalls || diff.Hours > 0 || diff.Seconds != 0) return;
 
                     var message = "";
 
