@@ -118,5 +118,17 @@ namespace SkypeCallManager.Properties {
                 this["Sign"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IsBootVisible {
+            get {
+                return ((bool)(this["IsBootVisible"]));
+            }
+            set {
+                this["IsBootVisible"] = value;
+            }
+        }
     }
 }

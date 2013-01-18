@@ -30,7 +30,7 @@ namespace SkypeCallManager
         {
             Shown += (sender, e) =>
                 {
-                    SetVisible(false);
+                    SetVisible(SettingManager.IsBootVisible);
                     _skypeManager.AttachSkype();
                 };
             FormClosing +=

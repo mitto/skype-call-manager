@@ -55,10 +55,13 @@
             this.groupBoxStopCall = new System.Windows.Forms.GroupBox();
             this.dateTimePickerStopTime = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBoxAutoHideForm = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
+            this.tabPageGeneralSetting.SuspendLayout();
             this.tabPageChatSetting.SuspendLayout();
             this.groupBoxChatSign.SuspendLayout();
             this.groupBoxChatMessages.SuspendLayout();
@@ -109,6 +112,8 @@
             // 
             // tabPageGeneralSetting
             // 
+            this.tabPageGeneralSetting.Controls.Add(this.label8);
+            this.tabPageGeneralSetting.Controls.Add(this.checkBoxAutoHideForm);
             this.tabPageGeneralSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneralSetting.Name = "tabPageGeneralSetting";
             this.tabPageGeneralSetting.Padding = new System.Windows.Forms.Padding(3);
@@ -358,6 +363,24 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "この時間になったら通話を切る";
             // 
+            // checkBoxAutoHideForm
+            // 
+            this.checkBoxAutoHideForm.AutoSize = true;
+            this.checkBoxAutoHideForm.Location = new System.Drawing.Point(270, 26);
+            this.checkBoxAutoHideForm.Name = "checkBoxAutoHideForm";
+            this.checkBoxAutoHideForm.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxAutoHideForm.TabIndex = 0;
+            this.checkBoxAutoHideForm.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(21, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(152, 12);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "起動時にメイン画面を表示する";
+            // 
             // FormSetting
             // 
             this.AcceptButton = this.buttonClose;
@@ -377,6 +400,8 @@
             this.toolStripContainerMain.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tabControlMain.ResumeLayout(false);
+            this.tabPageGeneralSetting.ResumeLayout(false);
+            this.tabPageGeneralSetting.PerformLayout();
             this.tabPageChatSetting.ResumeLayout(false);
             this.groupBoxChatSign.ResumeLayout(false);
             this.groupBoxChatSign.PerformLayout();
@@ -419,6 +444,8 @@
         private System.Windows.Forms.GroupBox groupBoxStopCall;
         private System.Windows.Forms.DateTimePicker dateTimePickerStopTime;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox checkBoxAutoHideForm;
 
     }
 }

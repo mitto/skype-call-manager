@@ -116,5 +116,19 @@ namespace SkypeCallManager
                 Settings.Default.Save();
             }
         }
+
+        public static bool IsBootVisible
+        {
+            get
+            {
+                return Settings.Default.IsBootVisible;
+            }
+            set
+            {
+                Settings.Default.IsBootVisible = value;
+                Settings.Default.Save();
+            }
+        }
+
     }
 }

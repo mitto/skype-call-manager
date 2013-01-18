@@ -33,6 +33,8 @@ namespace SkypeCallManager
             textBoxFifteenMinuteMessage.Text = SettingManager.FifteenMinuteMessage;
             textBoxSign.Text = SettingManager.Sign;
 
+            checkBoxAutoHideForm.Checked = SettingManager.IsBootVisible;
+
             if (SettingManager.IsSignAfter)
             {
                 radioButtonSignAfter.Checked = true;
@@ -58,6 +60,8 @@ namespace SkypeCallManager
 
             radioButtonSignAfter.Click += (sender, e) => SettingManager.IsSignAfter = true;
             radioButtonSignBefore.Click += (sender, e) => SettingManager.IsSignAfter = false;
+
+            checkBoxAutoHideForm.CheckedChanged += (sender, e) => SettingManager.IsBootVisible = checkBoxAutoHideForm.Checked;
         }
 
     }
