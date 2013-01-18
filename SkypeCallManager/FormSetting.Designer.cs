@@ -57,6 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBoxAutoHideForm = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.groupBoxBoot = new System.Windows.Forms.GroupBox();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -68,6 +69,7 @@
             this.panel2.SuspendLayout();
             this.tabPageTimeSetting.SuspendLayout();
             this.groupBoxStopCall.SuspendLayout();
+            this.groupBoxBoot.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainerMain
@@ -112,8 +114,7 @@
             // 
             // tabPageGeneralSetting
             // 
-            this.tabPageGeneralSetting.Controls.Add(this.label8);
-            this.tabPageGeneralSetting.Controls.Add(this.checkBoxAutoHideForm);
+            this.tabPageGeneralSetting.Controls.Add(this.groupBoxBoot);
             this.tabPageGeneralSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneralSetting.Name = "tabPageGeneralSetting";
             this.tabPageGeneralSetting.Padding = new System.Windows.Forms.Padding(3);
@@ -366,7 +367,7 @@
             // checkBoxAutoHideForm
             // 
             this.checkBoxAutoHideForm.AutoSize = true;
-            this.checkBoxAutoHideForm.Location = new System.Drawing.Point(270, 26);
+            this.checkBoxAutoHideForm.Location = new System.Drawing.Point(267, 33);
             this.checkBoxAutoHideForm.Name = "checkBoxAutoHideForm";
             this.checkBoxAutoHideForm.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAutoHideForm.TabIndex = 0;
@@ -375,11 +376,22 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 28);
+            this.label8.Location = new System.Drawing.Point(18, 35);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(152, 12);
             this.label8.TabIndex = 1;
             this.label8.Text = "起動時にメイン画面を表示する";
+            // 
+            // groupBoxBoot
+            // 
+            this.groupBoxBoot.Controls.Add(this.label8);
+            this.groupBoxBoot.Controls.Add(this.checkBoxAutoHideForm);
+            this.groupBoxBoot.Location = new System.Drawing.Point(8, 6);
+            this.groupBoxBoot.Name = "groupBoxBoot";
+            this.groupBoxBoot.Size = new System.Drawing.Size(312, 71);
+            this.groupBoxBoot.TabIndex = 2;
+            this.groupBoxBoot.TabStop = false;
+            this.groupBoxBoot.Text = "起動時設定";
             // 
             // FormSetting
             // 
@@ -401,7 +413,6 @@
             this.panel1.ResumeLayout(false);
             this.tabControlMain.ResumeLayout(false);
             this.tabPageGeneralSetting.ResumeLayout(false);
-            this.tabPageGeneralSetting.PerformLayout();
             this.tabPageChatSetting.ResumeLayout(false);
             this.groupBoxChatSign.ResumeLayout(false);
             this.groupBoxChatSign.PerformLayout();
@@ -411,6 +422,8 @@
             this.tabPageTimeSetting.ResumeLayout(false);
             this.groupBoxStopCall.ResumeLayout(false);
             this.groupBoxStopCall.PerformLayout();
+            this.groupBoxBoot.ResumeLayout(false);
+            this.groupBoxBoot.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -446,6 +459,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox checkBoxAutoHideForm;
+        private System.Windows.Forms.GroupBox groupBoxBoot;
 
     }
 }
