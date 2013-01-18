@@ -32,9 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageGeneralSetting = new System.Windows.Forms.TabPage();
-            this.dateTimePickerStopTime = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPageChatSetting = new System.Windows.Forms.TabPage();
+            this.groupBoxChatSign = new System.Windows.Forms.GroupBox();
+            this.textBoxSign = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radioButtonSignAfter = new System.Windows.Forms.RadioButton();
+            this.radioButtonSignBefore = new System.Windows.Forms.RadioButton();
             this.groupBoxChatMessages = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,20 +51,20 @@
             this.textBoxFifteenMinuteMessage = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.groupBoxChatSign = new System.Windows.Forms.GroupBox();
-            this.radioButtonSignBefore = new System.Windows.Forms.RadioButton();
-            this.radioButtonSignAfter = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxSign = new System.Windows.Forms.TextBox();
+            this.tabPageTimeSetting = new System.Windows.Forms.TabPage();
+            this.groupBoxStopCall = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerStopTime = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
-            this.tabPageGeneralSetting.SuspendLayout();
             this.tabPageChatSetting.SuspendLayout();
+            this.groupBoxChatSign.SuspendLayout();
             this.groupBoxChatMessages.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.groupBoxChatSign.SuspendLayout();
+            this.tabPageTimeSetting.SuspendLayout();
+            this.groupBoxStopCall.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainerMain
@@ -72,13 +75,13 @@
             // 
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel1);
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel2);
-            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(334, 312);
+            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(334, 334);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainerMain.LeftToolStripPanelVisible = false;
             this.toolStripContainerMain.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainerMain.Name = "toolStripContainerMain";
             this.toolStripContainerMain.RightToolStripPanelVisible = false;
-            this.toolStripContainerMain.Size = new System.Drawing.Size(334, 312);
+            this.toolStripContainerMain.Size = new System.Drawing.Size(334, 334);
             this.toolStripContainerMain.TabIndex = 0;
             this.toolStripContainerMain.Text = "toolStripContainer1";
             this.toolStripContainerMain.TopToolStripPanelVisible = false;
@@ -89,51 +92,30 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 279);
+            this.panel1.Size = new System.Drawing.Size(334, 301);
             this.panel1.TabIndex = 0;
             // 
             // tabControlMain
             // 
             this.tabControlMain.Controls.Add(this.tabPageGeneralSetting);
+            this.tabControlMain.Controls.Add(this.tabPageTimeSetting);
             this.tabControlMain.Controls.Add(this.tabPageChatSetting);
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(334, 279);
+            this.tabControlMain.Size = new System.Drawing.Size(334, 301);
             this.tabControlMain.TabIndex = 0;
             // 
             // tabPageGeneralSetting
             // 
-            this.tabPageGeneralSetting.Controls.Add(this.dateTimePickerStopTime);
-            this.tabPageGeneralSetting.Controls.Add(this.label1);
             this.tabPageGeneralSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneralSetting.Name = "tabPageGeneralSetting";
             this.tabPageGeneralSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGeneralSetting.Size = new System.Drawing.Size(326, 247);
+            this.tabPageGeneralSetting.Size = new System.Drawing.Size(326, 275);
             this.tabPageGeneralSetting.TabIndex = 0;
             this.tabPageGeneralSetting.Text = "全般";
             this.tabPageGeneralSetting.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePickerStopTime
-            // 
-            this.dateTimePickerStopTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerStopTime.CustomFormat = "HH:mm";
-            this.dateTimePickerStopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerStopTime.Location = new System.Drawing.Point(254, 7);
-            this.dateTimePickerStopTime.Name = "dateTimePickerStopTime";
-            this.dateTimePickerStopTime.ShowUpDown = true;
-            this.dateTimePickerStopTime.Size = new System.Drawing.Size(64, 19);
-            this.dateTimePickerStopTime.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "この時間になったら通話を止める";
             // 
             // tabPageChatSetting
             // 
@@ -142,10 +124,65 @@
             this.tabPageChatSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageChatSetting.Name = "tabPageChatSetting";
             this.tabPageChatSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageChatSetting.Size = new System.Drawing.Size(326, 253);
+            this.tabPageChatSetting.Size = new System.Drawing.Size(326, 275);
             this.tabPageChatSetting.TabIndex = 1;
             this.tabPageChatSetting.Text = "チャット";
             this.tabPageChatSetting.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxChatSign
+            // 
+            this.groupBoxChatSign.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxChatSign.Controls.Add(this.textBoxSign);
+            this.groupBoxChatSign.Controls.Add(this.label7);
+            this.groupBoxChatSign.Controls.Add(this.radioButtonSignAfter);
+            this.groupBoxChatSign.Controls.Add(this.radioButtonSignBefore);
+            this.groupBoxChatSign.Location = new System.Drawing.Point(8, 161);
+            this.groupBoxChatSign.Name = "groupBoxChatSign";
+            this.groupBoxChatSign.Size = new System.Drawing.Size(310, 86);
+            this.groupBoxChatSign.TabIndex = 3;
+            this.groupBoxChatSign.TabStop = false;
+            this.groupBoxChatSign.Text = "送信元";
+            // 
+            // textBoxSign
+            // 
+            this.textBoxSign.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSign.Location = new System.Drawing.Point(140, 49);
+            this.textBoxSign.Name = "textBoxSign";
+            this.textBoxSign.Size = new System.Drawing.Size(164, 19);
+            this.textBoxSign.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 52);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(126, 12);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "メッセージに付ける送信元";
+            // 
+            // radioButtonSignAfter
+            // 
+            this.radioButtonSignAfter.AutoSize = true;
+            this.radioButtonSignAfter.Checked = true;
+            this.radioButtonSignAfter.Location = new System.Drawing.Point(104, 18);
+            this.radioButtonSignAfter.Name = "radioButtonSignAfter";
+            this.radioButtonSignAfter.Size = new System.Drawing.Size(84, 16);
+            this.radioButtonSignAfter.TabIndex = 1;
+            this.radioButtonSignAfter.TabStop = true;
+            this.radioButtonSignAfter.Text = "後ろに付ける";
+            this.radioButtonSignAfter.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSignBefore
+            // 
+            this.radioButtonSignBefore.AutoSize = true;
+            this.radioButtonSignBefore.Location = new System.Drawing.Point(10, 18);
+            this.radioButtonSignBefore.Name = "radioButtonSignBefore";
+            this.radioButtonSignBefore.Size = new System.Drawing.Size(75, 16);
+            this.radioButtonSignBefore.TabIndex = 0;
+            this.radioButtonSignBefore.Text = "前に付ける";
+            this.radioButtonSignBefore.UseVisualStyleBackColor = true;
             // 
             // groupBoxChatMessages
             // 
@@ -262,7 +299,7 @@
             // 
             this.panel2.Controls.Add(this.buttonClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 279);
+            this.panel2.Location = new System.Drawing.Point(0, 301);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(334, 33);
             this.panel2.TabIndex = 1;
@@ -277,67 +314,56 @@
             this.buttonClose.Text = "閉じる";
             this.buttonClose.UseVisualStyleBackColor = true;
             // 
-            // groupBoxChatSign
+            // tabPageTimeSetting
             // 
-            this.groupBoxChatSign.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tabPageTimeSetting.Controls.Add(this.groupBoxStopCall);
+            this.tabPageTimeSetting.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTimeSetting.Name = "tabPageTimeSetting";
+            this.tabPageTimeSetting.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTimeSetting.Size = new System.Drawing.Size(326, 275);
+            this.tabPageTimeSetting.TabIndex = 2;
+            this.tabPageTimeSetting.Text = "時間";
+            this.tabPageTimeSetting.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxStopCall
+            // 
+            this.groupBoxStopCall.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxChatSign.Controls.Add(this.textBoxSign);
-            this.groupBoxChatSign.Controls.Add(this.label7);
-            this.groupBoxChatSign.Controls.Add(this.radioButtonSignAfter);
-            this.groupBoxChatSign.Controls.Add(this.radioButtonSignBefore);
-            this.groupBoxChatSign.Location = new System.Drawing.Point(8, 161);
-            this.groupBoxChatSign.Name = "groupBoxChatSign";
-            this.groupBoxChatSign.Size = new System.Drawing.Size(310, 86);
-            this.groupBoxChatSign.TabIndex = 3;
-            this.groupBoxChatSign.TabStop = false;
-            this.groupBoxChatSign.Text = "送信元";
+            this.groupBoxStopCall.Controls.Add(this.dateTimePickerStopTime);
+            this.groupBoxStopCall.Controls.Add(this.label1);
+            this.groupBoxStopCall.Location = new System.Drawing.Point(8, 6);
+            this.groupBoxStopCall.Name = "groupBoxStopCall";
+            this.groupBoxStopCall.Size = new System.Drawing.Size(310, 55);
+            this.groupBoxStopCall.TabIndex = 0;
+            this.groupBoxStopCall.TabStop = false;
+            this.groupBoxStopCall.Text = "切断時間設定";
             // 
-            // radioButtonSignBefore
+            // dateTimePickerStopTime
             // 
-            this.radioButtonSignBefore.AutoSize = true;
-            this.radioButtonSignBefore.Location = new System.Drawing.Point(10, 18);
-            this.radioButtonSignBefore.Name = "radioButtonSignBefore";
-            this.radioButtonSignBefore.Size = new System.Drawing.Size(75, 16);
-            this.radioButtonSignBefore.TabIndex = 0;
-            this.radioButtonSignBefore.Text = "前に付ける";
-            this.radioButtonSignBefore.UseVisualStyleBackColor = true;
+            this.dateTimePickerStopTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerStopTime.CustomFormat = "HH:mm";
+            this.dateTimePickerStopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerStopTime.Location = new System.Drawing.Point(232, 22);
+            this.dateTimePickerStopTime.Name = "dateTimePickerStopTime";
+            this.dateTimePickerStopTime.ShowUpDown = true;
+            this.dateTimePickerStopTime.Size = new System.Drawing.Size(72, 19);
+            this.dateTimePickerStopTime.TabIndex = 3;
             // 
-            // radioButtonSignAfter
+            // label1
             // 
-            this.radioButtonSignAfter.AutoSize = true;
-            this.radioButtonSignAfter.Checked = true;
-            this.radioButtonSignAfter.Location = new System.Drawing.Point(104, 18);
-            this.radioButtonSignAfter.Name = "radioButtonSignAfter";
-            this.radioButtonSignAfter.Size = new System.Drawing.Size(84, 16);
-            this.radioButtonSignAfter.TabIndex = 1;
-            this.radioButtonSignAfter.TabStop = true;
-            this.radioButtonSignAfter.Text = "後ろに付ける";
-            this.radioButtonSignAfter.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 52);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 12);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "メッセージに付ける送信元";
-            // 
-            // textBoxSign
-            // 
-            this.textBoxSign.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSign.Location = new System.Drawing.Point(140, 49);
-            this.textBoxSign.Name = "textBoxSign";
-            this.textBoxSign.Size = new System.Drawing.Size(164, 19);
-            this.textBoxSign.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "この時間になったら通話を切る";
             // 
             // FormSetting
             // 
             this.AcceptButton = this.buttonClose;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 312);
+            this.ClientSize = new System.Drawing.Size(334, 334);
             this.ControlBox = false;
             this.Controls.Add(this.toolStripContainerMain);
             this.MaximizeBox = false;
@@ -351,14 +377,15 @@
             this.toolStripContainerMain.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tabControlMain.ResumeLayout(false);
-            this.tabPageGeneralSetting.ResumeLayout(false);
-            this.tabPageGeneralSetting.PerformLayout();
             this.tabPageChatSetting.ResumeLayout(false);
+            this.groupBoxChatSign.ResumeLayout(false);
+            this.groupBoxChatSign.PerformLayout();
             this.groupBoxChatMessages.ResumeLayout(false);
             this.groupBoxChatMessages.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.groupBoxChatSign.ResumeLayout(false);
-            this.groupBoxChatSign.PerformLayout();
+            this.tabPageTimeSetting.ResumeLayout(false);
+            this.groupBoxStopCall.ResumeLayout(false);
+            this.groupBoxStopCall.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -371,8 +398,6 @@
         private System.Windows.Forms.TabPage tabPageGeneralSetting;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.DateTimePicker dateTimePickerStopTime;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPageChatSetting;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBoxChatMessages;
@@ -390,6 +415,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton radioButtonSignAfter;
         private System.Windows.Forms.RadioButton radioButtonSignBefore;
+        private System.Windows.Forms.TabPage tabPageTimeSetting;
+        private System.Windows.Forms.GroupBox groupBoxStopCall;
+        private System.Windows.Forms.DateTimePicker dateTimePickerStopTime;
+        private System.Windows.Forms.Label label1;
 
     }
 }
