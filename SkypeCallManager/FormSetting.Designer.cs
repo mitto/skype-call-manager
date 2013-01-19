@@ -86,13 +86,13 @@
             // 
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel1);
             this.toolStripContainerMain.ContentPanel.Controls.Add(this.panel2);
-            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(334, 334);
+            this.toolStripContainerMain.ContentPanel.Size = new System.Drawing.Size(334, 337);
             this.toolStripContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainerMain.LeftToolStripPanelVisible = false;
             this.toolStripContainerMain.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainerMain.Name = "toolStripContainerMain";
             this.toolStripContainerMain.RightToolStripPanelVisible = false;
-            this.toolStripContainerMain.Size = new System.Drawing.Size(334, 334);
+            this.toolStripContainerMain.Size = new System.Drawing.Size(334, 337);
             this.toolStripContainerMain.TabIndex = 0;
             this.toolStripContainerMain.Text = "toolStripContainer1";
             this.toolStripContainerMain.TopToolStripPanelVisible = false;
@@ -103,7 +103,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 301);
+            this.panel1.Size = new System.Drawing.Size(334, 304);
             this.panel1.TabIndex = 0;
             // 
             // tabControlMain
@@ -115,7 +115,7 @@
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(334, 301);
+            this.tabControlMain.Size = new System.Drawing.Size(334, 304);
             this.tabControlMain.TabIndex = 0;
             // 
             // tabPageGeneralSetting
@@ -125,7 +125,7 @@
             this.tabPageGeneralSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneralSetting.Name = "tabPageGeneralSetting";
             this.tabPageGeneralSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageGeneralSetting.Size = new System.Drawing.Size(326, 275);
+            this.tabPageGeneralSetting.Size = new System.Drawing.Size(326, 278);
             this.tabPageGeneralSetting.TabIndex = 0;
             this.tabPageGeneralSetting.Text = "全般";
             this.tabPageGeneralSetting.UseVisualStyleBackColor = true;
@@ -165,7 +165,7 @@
             this.tabPageTimeSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageTimeSetting.Name = "tabPageTimeSetting";
             this.tabPageTimeSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTimeSetting.Size = new System.Drawing.Size(326, 275);
+            this.tabPageTimeSetting.Size = new System.Drawing.Size(326, 278);
             this.tabPageTimeSetting.TabIndex = 2;
             this.tabPageTimeSetting.Text = "時間";
             this.tabPageTimeSetting.UseVisualStyleBackColor = true;
@@ -210,7 +210,7 @@
             this.tabPageChatSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageChatSetting.Name = "tabPageChatSetting";
             this.tabPageChatSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageChatSetting.Size = new System.Drawing.Size(326, 275);
+            this.tabPageChatSetting.Size = new System.Drawing.Size(326, 278);
             this.tabPageChatSetting.TabIndex = 1;
             this.tabPageChatSetting.Text = "チャット";
             this.tabPageChatSetting.UseVisualStyleBackColor = true;
@@ -387,7 +387,7 @@
             // 
             this.panel2.Controls.Add(this.buttonClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 301);
+            this.panel2.Location = new System.Drawing.Point(0, 304);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(334, 33);
             this.panel2.TabIndex = 1;
@@ -456,12 +456,12 @@
             this.AcceptButton = this.buttonClose;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 334);
+            this.ClientSize = new System.Drawing.Size(334, 337);
             this.ControlBox = false;
             this.Controls.Add(this.toolStripContainerMain);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(350, 350);
+            this.MinimumSize = new System.Drawing.Size(350, 375);
             this.Name = "FormSetting";
             this.Text = "設定";
             this.Load += new System.EventHandler(this.FormSettingLoad);

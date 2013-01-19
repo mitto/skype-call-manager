@@ -79,33 +79,39 @@ namespace SkypeCallManager
                     if (!_skypeManager.ExistsActiveCalls || diff.Hours > 0 || diff.Seconds != 0) return;
 
                     var message = "";
+                    var isAlert = false;
 
                     switch ((int)diff.TotalMinutes)
                     {
                         case 0:
                             _skypeManager.FinishActiveCall();
                             message = SettingManager.DisconnectMessage;
+                            isAlert = true;
                             break;
                         case 1:
                             message = SettingManager.OneMinuteMessage;
+                            isAlert = true;
                             break;
                         case 3:
                             message = SettingManager.ThreeMinuteMessage;
+                            isAlert = true;
                             break;
                         case 5:
                             message = SettingManager.FiveMinuteMessage;
+                            isAlert = true;
                             break;
                         case 10:
                             message = SettingManager.TenMinuteMessage;
+                            isAlert = true;
                             break;
                         case 15:
                             message = SettingManager.FifteenMinuteMessage;
+                            isAlert = true;
                             break;
                     }
 
+                    if (isAlert && SettingManager.IsTrayNotificationEnabled) AlertBalloon((int)diff.TotalMinutes, stoptime);
                     if (string.IsNullOrWhiteSpace(message)) return;
-
-                    if (SettingManager.IsTrayNotificationEnabled) AlertBalloon((int)diff.TotalMinutes, stoptime);
 
                     if (SettingManager.IsSignAfter)
                     {
