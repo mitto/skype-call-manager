@@ -142,5 +142,18 @@ namespace SkypeCallManager
                 Settings.Default.Save();
             }
         }
+
+        public static string DisconnectMessage
+        {
+            get
+            {
+                return Settings.Default.DisconnectMessage;
+            }
+            set
+            {
+                Settings.Default.DisconnectMessage = value;
+                Settings.Default.Save();
+            }
+        }
     }
 }

@@ -32,5 +32,8 @@
     <Setting Name="IsTrayNotificationEnable" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="DisconnectMessage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">通話を終了しました</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -84,6 +84,7 @@ namespace SkypeCallManager
                     {
                         case 0:
                             _skypeManager.FinishActiveCall();
+                            message = SettingManager.DisconnectMessage;
                             break;
                         case 1:
                             message = SettingManager.OneMinuteMessage;
@@ -168,7 +169,9 @@ namespace SkypeCallManager
 
         private void AlertBalloon(int minute, DateTime endtime)
         {
-            AlertBalloon(string.Format("通話を切るまであと{0}分くらいです", minute), string.Format("通話終了予定時刻\n「{0}」", endtime.ToString("yyyy/MM/dd HH:mm:ss")));
+            var title = minute == 0 ? Properties.Resources.Information : string.Format("通話を切るまであと{0}分くらいです", minute);
+            var message = minute == 0 ? "通話を終了しました" : string.Format("通話終了予定時刻\n「{0}」", endtime.ToString("yyyy/MM/dd HH:mm:ss"));
+            AlertBalloon(title, message);
         }
 
         private void AlertBalloon(string title, string message, ToolTipIcon icon = ToolTipIcon.Info, int time = 5000)

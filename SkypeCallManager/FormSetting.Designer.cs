@@ -61,6 +61,8 @@
             this.groupBoxNotification = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.checkBoxTrayNotificationEnable = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxDisconnectMessage = new System.Windows.Forms.TextBox();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -221,7 +223,7 @@
             this.groupBoxChatSign.Controls.Add(this.label7);
             this.groupBoxChatSign.Controls.Add(this.radioButtonSignAfter);
             this.groupBoxChatSign.Controls.Add(this.radioButtonSignBefore);
-            this.groupBoxChatSign.Location = new System.Drawing.Point(8, 161);
+            this.groupBoxChatSign.Location = new System.Drawing.Point(8, 183);
             this.groupBoxChatSign.Name = "groupBoxChatSign";
             this.groupBoxChatSign.Size = new System.Drawing.Size(310, 86);
             this.groupBoxChatSign.TabIndex = 3;
@@ -272,6 +274,8 @@
             // 
             this.groupBoxChatMessages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxChatMessages.Controls.Add(this.textBoxDisconnectMessage);
+            this.groupBoxChatMessages.Controls.Add(this.label10);
             this.groupBoxChatMessages.Controls.Add(this.label2);
             this.groupBoxChatMessages.Controls.Add(this.label3);
             this.groupBoxChatMessages.Controls.Add(this.label4);
@@ -284,7 +288,7 @@
             this.groupBoxChatMessages.Controls.Add(this.textBoxFifteenMinuteMessage);
             this.groupBoxChatMessages.Location = new System.Drawing.Point(8, 6);
             this.groupBoxChatMessages.Name = "groupBoxChatMessages";
-            this.groupBoxChatMessages.Size = new System.Drawing.Size(310, 149);
+            this.groupBoxChatMessages.Size = new System.Drawing.Size(310, 171);
             this.groupBoxChatMessages.TabIndex = 2;
             this.groupBoxChatMessages.TabStop = false;
             this.groupBoxChatMessages.Text = "切断前に送信するメッセージ";
@@ -292,7 +296,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 21);
+            this.label2.Location = new System.Drawing.Point(8, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 0;
@@ -301,7 +305,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 46);
+            this.label3.Location = new System.Drawing.Point(8, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 12);
             this.label3.TabIndex = 2;
@@ -310,7 +314,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 71);
+            this.label4.Location = new System.Drawing.Point(8, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 12);
             this.label4.TabIndex = 4;
@@ -319,7 +323,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 96);
+            this.label5.Location = new System.Drawing.Point(8, 119);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 12);
             this.label5.TabIndex = 6;
@@ -328,7 +332,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 121);
+            this.label6.Location = new System.Drawing.Point(8, 144);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 12);
             this.label6.TabIndex = 8;
@@ -338,7 +342,7 @@
             // 
             this.textBoxOneMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxOneMinuteMessage.Location = new System.Drawing.Point(70, 18);
+            this.textBoxOneMinuteMessage.Location = new System.Drawing.Point(70, 41);
             this.textBoxOneMinuteMessage.Name = "textBoxOneMinuteMessage";
             this.textBoxOneMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxOneMinuteMessage.TabIndex = 1;
@@ -347,7 +351,7 @@
             // 
             this.textBoxThreeMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxThreeMinuteMessage.Location = new System.Drawing.Point(70, 43);
+            this.textBoxThreeMinuteMessage.Location = new System.Drawing.Point(70, 66);
             this.textBoxThreeMinuteMessage.Name = "textBoxThreeMinuteMessage";
             this.textBoxThreeMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxThreeMinuteMessage.TabIndex = 3;
@@ -356,7 +360,7 @@
             // 
             this.textBoxFiveMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxFiveMinuteMessage.Location = new System.Drawing.Point(70, 68);
+            this.textBoxFiveMinuteMessage.Location = new System.Drawing.Point(70, 91);
             this.textBoxFiveMinuteMessage.Name = "textBoxFiveMinuteMessage";
             this.textBoxFiveMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxFiveMinuteMessage.TabIndex = 5;
@@ -365,7 +369,7 @@
             // 
             this.textBoxTenMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTenMinuteMessage.Location = new System.Drawing.Point(70, 93);
+            this.textBoxTenMinuteMessage.Location = new System.Drawing.Point(70, 116);
             this.textBoxTenMinuteMessage.Name = "textBoxTenMinuteMessage";
             this.textBoxTenMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxTenMinuteMessage.TabIndex = 7;
@@ -374,7 +378,7 @@
             // 
             this.textBoxFifteenMinuteMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxFifteenMinuteMessage.Location = new System.Drawing.Point(70, 118);
+            this.textBoxFifteenMinuteMessage.Location = new System.Drawing.Point(70, 141);
             this.textBoxFifteenMinuteMessage.Name = "textBoxFifteenMinuteMessage";
             this.textBoxFifteenMinuteMessage.Size = new System.Drawing.Size(234, 19);
             this.textBoxFifteenMinuteMessage.TabIndex = 9;
@@ -428,6 +432,24 @@
             this.checkBoxTrayNotificationEnable.Size = new System.Drawing.Size(15, 14);
             this.checkBoxTrayNotificationEnable.TabIndex = 1;
             this.checkBoxTrayNotificationEnable.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(8, 19);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 12);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "切断時";
+            // 
+            // textBoxDisconnectMessage
+            // 
+            this.textBoxDisconnectMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxDisconnectMessage.Location = new System.Drawing.Point(70, 16);
+            this.textBoxDisconnectMessage.Name = "textBoxDisconnectMessage";
+            this.textBoxDisconnectMessage.Size = new System.Drawing.Size(234, 19);
+            this.textBoxDisconnectMessage.TabIndex = 11;
             // 
             // FormSetting
             // 
@@ -501,6 +523,8 @@
         private System.Windows.Forms.GroupBox groupBoxNotification;
         private System.Windows.Forms.CheckBox checkBoxTrayNotificationEnable;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxDisconnectMessage;
+        private System.Windows.Forms.Label label10;
 
     }
 }

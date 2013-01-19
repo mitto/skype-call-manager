@@ -142,5 +142,17 @@ namespace SkypeCallManager.Properties {
                 this["IsTrayNotificationEnable"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("通話を終了しました")]
+        public string DisconnectMessage {
+            get {
+                return ((string)(this["DisconnectMessage"]));
+            }
+            set {
+                this["DisconnectMessage"] = value;
+            }
+        }
     }
 }
