@@ -34,6 +34,7 @@ namespace SkypeCallManager
             textBoxSign.Text = SettingManager.Sign;
 
             checkBoxAutoHideForm.Checked = SettingManager.IsBootVisible;
+            checkBoxTrayNotificationEnable.Checked = SettingManager.IsTrayNotificationEnabled;
 
             if (SettingManager.IsSignAfter)
             {
@@ -62,6 +63,7 @@ namespace SkypeCallManager
             radioButtonSignBefore.Click += (sender, e) => SettingManager.IsSignAfter = false;
 
             checkBoxAutoHideForm.CheckedChanged += (sender, e) => SettingManager.IsBootVisible = checkBoxAutoHideForm.Checked;
+            checkBoxTrayNotificationEnable.CheckedChanged += (sender, e) => SettingManager.IsTrayNotificationEnabled = checkBoxTrayNotificationEnable.Checked;
         }
 
     }

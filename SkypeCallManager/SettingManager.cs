@@ -130,5 +130,17 @@ namespace SkypeCallManager
             }
         }
 
+        public static bool IsTrayNotificationEnabled
+        {
+            get
+            {
+                return Settings.Default.IsTrayNotificationEnable;
+            }
+            set
+            {
+                Settings.Default.IsTrayNotificationEnable = value;
+                Settings.Default.Save();
+            }
+        }
     }
 }

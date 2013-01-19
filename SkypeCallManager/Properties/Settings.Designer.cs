@@ -130,5 +130,17 @@ namespace SkypeCallManager.Properties {
                 this["IsBootVisible"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool IsTrayNotificationEnable {
+            get {
+                return ((bool)(this["IsTrayNotificationEnable"]));
+            }
+            set {
+                this["IsTrayNotificationEnable"] = value;
+            }
+        }
     }
 }

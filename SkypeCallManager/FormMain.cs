@@ -104,6 +104,8 @@ namespace SkypeCallManager
 
                     if (string.IsNullOrWhiteSpace(message)) return;
 
+                    if (SettingManager.IsTrayNotificationEnabled) AlertBalloon((int)diff.TotalMinutes, stoptime);
+
                     if (SettingManager.IsSignAfter)
                     {
                         message += SettingManager.Sign;
@@ -162,6 +164,19 @@ namespace SkypeCallManager
                 message = "No active calls.";
             }
             labelToSettingTime.Text = message;
+        }
+
+        private void AlertBalloon(int minute, DateTime endtime)
+        {
+            AlertBalloon(string.Format("通話を切るまであと{0}分くらいです", minute), string.Format("通話終了予定時刻\n「{0}」", endtime.ToString("yyyy/MM/dd HH:mm:ss")));
+        }
+
+        private void AlertBalloon(string title, string message, ToolTipIcon icon = ToolTipIcon.Info, int time = 5000)
+        {
+            notifyIconMain.BalloonTipTitle = title;
+            notifyIconMain.BalloonTipText = message;
+            notifyIconMain.BalloonTipIcon = icon;
+            notifyIconMain.ShowBalloonTip(time);
         }
     }
 }

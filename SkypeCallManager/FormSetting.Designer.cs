@@ -32,6 +32,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageGeneralSetting = new System.Windows.Forms.TabPage();
+            this.groupBoxBoot = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.checkBoxAutoHideForm = new System.Windows.Forms.CheckBox();
+            this.tabPageTimeSetting = new System.Windows.Forms.TabPage();
+            this.groupBoxStopCall = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerStopTime = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPageChatSetting = new System.Windows.Forms.TabPage();
             this.groupBoxChatSign = new System.Windows.Forms.GroupBox();
             this.textBoxSign = new System.Windows.Forms.TextBox();
@@ -51,25 +58,22 @@
             this.textBoxFifteenMinuteMessage = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.tabPageTimeSetting = new System.Windows.Forms.TabPage();
-            this.groupBoxStopCall = new System.Windows.Forms.GroupBox();
-            this.dateTimePickerStopTime = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBoxAutoHideForm = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBoxBoot = new System.Windows.Forms.GroupBox();
+            this.groupBoxNotification = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.checkBoxTrayNotificationEnable = new System.Windows.Forms.CheckBox();
             this.toolStripContainerMain.ContentPanel.SuspendLayout();
             this.toolStripContainerMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageGeneralSetting.SuspendLayout();
+            this.groupBoxBoot.SuspendLayout();
+            this.tabPageTimeSetting.SuspendLayout();
+            this.groupBoxStopCall.SuspendLayout();
             this.tabPageChatSetting.SuspendLayout();
             this.groupBoxChatSign.SuspendLayout();
             this.groupBoxChatMessages.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.tabPageTimeSetting.SuspendLayout();
-            this.groupBoxStopCall.SuspendLayout();
-            this.groupBoxBoot.SuspendLayout();
+            this.groupBoxNotification.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainerMain
@@ -114,6 +118,7 @@
             // 
             // tabPageGeneralSetting
             // 
+            this.tabPageGeneralSetting.Controls.Add(this.groupBoxNotification);
             this.tabPageGeneralSetting.Controls.Add(this.groupBoxBoot);
             this.tabPageGeneralSetting.Location = new System.Drawing.Point(4, 22);
             this.tabPageGeneralSetting.Name = "tabPageGeneralSetting";
@@ -122,6 +127,79 @@
             this.tabPageGeneralSetting.TabIndex = 0;
             this.tabPageGeneralSetting.Text = "全般";
             this.tabPageGeneralSetting.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxBoot
+            // 
+            this.groupBoxBoot.Controls.Add(this.label8);
+            this.groupBoxBoot.Controls.Add(this.checkBoxAutoHideForm);
+            this.groupBoxBoot.Location = new System.Drawing.Point(8, 6);
+            this.groupBoxBoot.Name = "groupBoxBoot";
+            this.groupBoxBoot.Size = new System.Drawing.Size(312, 53);
+            this.groupBoxBoot.TabIndex = 2;
+            this.groupBoxBoot.TabStop = false;
+            this.groupBoxBoot.Text = "起動時設定";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(18, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(152, 12);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "起動時にメイン画面を表示する";
+            // 
+            // checkBoxAutoHideForm
+            // 
+            this.checkBoxAutoHideForm.AutoSize = true;
+            this.checkBoxAutoHideForm.Location = new System.Drawing.Point(268, 24);
+            this.checkBoxAutoHideForm.Name = "checkBoxAutoHideForm";
+            this.checkBoxAutoHideForm.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxAutoHideForm.TabIndex = 0;
+            this.checkBoxAutoHideForm.UseVisualStyleBackColor = true;
+            // 
+            // tabPageTimeSetting
+            // 
+            this.tabPageTimeSetting.Controls.Add(this.groupBoxStopCall);
+            this.tabPageTimeSetting.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTimeSetting.Name = "tabPageTimeSetting";
+            this.tabPageTimeSetting.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTimeSetting.Size = new System.Drawing.Size(326, 275);
+            this.tabPageTimeSetting.TabIndex = 2;
+            this.tabPageTimeSetting.Text = "時間";
+            this.tabPageTimeSetting.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxStopCall
+            // 
+            this.groupBoxStopCall.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxStopCall.Controls.Add(this.dateTimePickerStopTime);
+            this.groupBoxStopCall.Controls.Add(this.label1);
+            this.groupBoxStopCall.Location = new System.Drawing.Point(8, 6);
+            this.groupBoxStopCall.Name = "groupBoxStopCall";
+            this.groupBoxStopCall.Size = new System.Drawing.Size(310, 55);
+            this.groupBoxStopCall.TabIndex = 0;
+            this.groupBoxStopCall.TabStop = false;
+            this.groupBoxStopCall.Text = "切断時間設定";
+            // 
+            // dateTimePickerStopTime
+            // 
+            this.dateTimePickerStopTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePickerStopTime.CustomFormat = "HH:mm";
+            this.dateTimePickerStopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerStopTime.Location = new System.Drawing.Point(232, 22);
+            this.dateTimePickerStopTime.Name = "dateTimePickerStopTime";
+            this.dateTimePickerStopTime.ShowUpDown = true;
+            this.dateTimePickerStopTime.Size = new System.Drawing.Size(72, 19);
+            this.dateTimePickerStopTime.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "この時間になったら通話を切る";
             // 
             // tabPageChatSetting
             // 
@@ -320,78 +398,36 @@
             this.buttonClose.Text = "閉じる";
             this.buttonClose.UseVisualStyleBackColor = true;
             // 
-            // tabPageTimeSetting
+            // groupBoxNotification
             // 
-            this.tabPageTimeSetting.Controls.Add(this.groupBoxStopCall);
-            this.tabPageTimeSetting.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTimeSetting.Name = "tabPageTimeSetting";
-            this.tabPageTimeSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTimeSetting.Size = new System.Drawing.Size(326, 275);
-            this.tabPageTimeSetting.TabIndex = 2;
-            this.tabPageTimeSetting.Text = "時間";
-            this.tabPageTimeSetting.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxStopCall
-            // 
-            this.groupBoxStopCall.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.groupBoxNotification.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxStopCall.Controls.Add(this.dateTimePickerStopTime);
-            this.groupBoxStopCall.Controls.Add(this.label1);
-            this.groupBoxStopCall.Location = new System.Drawing.Point(8, 6);
-            this.groupBoxStopCall.Name = "groupBoxStopCall";
-            this.groupBoxStopCall.Size = new System.Drawing.Size(310, 55);
-            this.groupBoxStopCall.TabIndex = 0;
-            this.groupBoxStopCall.TabStop = false;
-            this.groupBoxStopCall.Text = "切断時間設定";
+            this.groupBoxNotification.Controls.Add(this.checkBoxTrayNotificationEnable);
+            this.groupBoxNotification.Controls.Add(this.label9);
+            this.groupBoxNotification.Location = new System.Drawing.Point(8, 65);
+            this.groupBoxNotification.Name = "groupBoxNotification";
+            this.groupBoxNotification.Size = new System.Drawing.Size(310, 56);
+            this.groupBoxNotification.TabIndex = 3;
+            this.groupBoxNotification.TabStop = false;
+            this.groupBoxNotification.Text = "通知設定";
             // 
-            // dateTimePickerStopTime
+            // label9
             // 
-            this.dateTimePickerStopTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePickerStopTime.CustomFormat = "HH:mm";
-            this.dateTimePickerStopTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerStopTime.Location = new System.Drawing.Point(232, 22);
-            this.dateTimePickerStopTime.Name = "dateTimePickerStopTime";
-            this.dateTimePickerStopTime.ShowUpDown = true;
-            this.dateTimePickerStopTime.Size = new System.Drawing.Size(72, 19);
-            this.dateTimePickerStopTime.TabIndex = 3;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(18, 28);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(210, 12);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "バルーンによる残り時間の通知を有効にする";
             // 
-            // label1
+            // checkBoxTrayNotificationEnable
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 12);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "この時間になったら通話を切る";
-            // 
-            // checkBoxAutoHideForm
-            // 
-            this.checkBoxAutoHideForm.AutoSize = true;
-            this.checkBoxAutoHideForm.Location = new System.Drawing.Point(267, 33);
-            this.checkBoxAutoHideForm.Name = "checkBoxAutoHideForm";
-            this.checkBoxAutoHideForm.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxAutoHideForm.TabIndex = 0;
-            this.checkBoxAutoHideForm.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 35);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 12);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "起動時にメイン画面を表示する";
-            // 
-            // groupBoxBoot
-            // 
-            this.groupBoxBoot.Controls.Add(this.label8);
-            this.groupBoxBoot.Controls.Add(this.checkBoxAutoHideForm);
-            this.groupBoxBoot.Location = new System.Drawing.Point(8, 6);
-            this.groupBoxBoot.Name = "groupBoxBoot";
-            this.groupBoxBoot.Size = new System.Drawing.Size(312, 71);
-            this.groupBoxBoot.TabIndex = 2;
-            this.groupBoxBoot.TabStop = false;
-            this.groupBoxBoot.Text = "起動時設定";
+            this.checkBoxTrayNotificationEnable.AutoSize = true;
+            this.checkBoxTrayNotificationEnable.Location = new System.Drawing.Point(268, 28);
+            this.checkBoxTrayNotificationEnable.Name = "checkBoxTrayNotificationEnable";
+            this.checkBoxTrayNotificationEnable.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxTrayNotificationEnable.TabIndex = 1;
+            this.checkBoxTrayNotificationEnable.UseVisualStyleBackColor = true;
             // 
             // FormSetting
             // 
@@ -413,17 +449,19 @@
             this.panel1.ResumeLayout(false);
             this.tabControlMain.ResumeLayout(false);
             this.tabPageGeneralSetting.ResumeLayout(false);
+            this.groupBoxBoot.ResumeLayout(false);
+            this.groupBoxBoot.PerformLayout();
+            this.tabPageTimeSetting.ResumeLayout(false);
+            this.groupBoxStopCall.ResumeLayout(false);
+            this.groupBoxStopCall.PerformLayout();
             this.tabPageChatSetting.ResumeLayout(false);
             this.groupBoxChatSign.ResumeLayout(false);
             this.groupBoxChatSign.PerformLayout();
             this.groupBoxChatMessages.ResumeLayout(false);
             this.groupBoxChatMessages.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.tabPageTimeSetting.ResumeLayout(false);
-            this.groupBoxStopCall.ResumeLayout(false);
-            this.groupBoxStopCall.PerformLayout();
-            this.groupBoxBoot.ResumeLayout(false);
-            this.groupBoxBoot.PerformLayout();
+            this.groupBoxNotification.ResumeLayout(false);
+            this.groupBoxNotification.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -460,6 +498,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox checkBoxAutoHideForm;
         private System.Windows.Forms.GroupBox groupBoxBoot;
+        private System.Windows.Forms.GroupBox groupBoxNotification;
+        private System.Windows.Forms.CheckBox checkBoxTrayNotificationEnable;
+        private System.Windows.Forms.Label label9;
 
     }
 }
